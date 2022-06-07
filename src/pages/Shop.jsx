@@ -29,7 +29,7 @@ const ShopContainer = styled.div`
 `;
 
 const ShopContent = styled.div`
-  // border: 3px solid yellow;
+  border: 3px solid yellow;
   // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
@@ -46,6 +46,8 @@ const ShopContent = styled.div`
 `;
 
 const ShopTitle = styled.div`
+
+border: 3px solid green;
   margin-top: 5rem;
   font-size: 70px;
   text-align: center;

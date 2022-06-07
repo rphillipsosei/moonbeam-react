@@ -95,7 +95,7 @@ margin-bottom: 20rem;
 `
 
 const ServicesContent = styled.div`
-  // border: 3px solid yellow;
+  border: 3px solid yellow;
   // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
@@ -123,7 +123,7 @@ const ServicesTitle = styled.div`
 `;
 
 const ServicesBox = styled.div`
-  // border: 3px solid pink;
+  border: 3px solid pink;
   height: 400px;
   width: 85%;
   display: flex;
@@ -137,7 +137,7 @@ const HexContainer = styled.div`
 
   width: 322px;
   height: 650px;
-  // border: 3px solid white;
+  border: 3px solid white;
   display: flex;
   justify-content: center;
   align-items: center;

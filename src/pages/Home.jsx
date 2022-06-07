@@ -41,7 +41,7 @@ export default function Home() {
 const AppContainer = styled.div`
 padding: 1rem;
 height: 100vh;
-// border: 3px solid green;
+border: 3px solid green;
 // display: flex;
 // flex-direction: column;
 `
@@ -49,7 +49,7 @@ height: 100vh;
 
 
 const HomeContainer = styled.div`
-  // border: 3px solid red;
+  border: 3px solid red;
   // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
@@ -58,7 +58,7 @@ const HomeContainer = styled.div`
 margin-bottom: 20rem;
 `;
 const HomeContent = styled.div`
-  // border: 3px solid yellow;
+  border: 3px solid yellow;
   // margin: 0.7rem 0;
   height: 100%;
   width: 100%;

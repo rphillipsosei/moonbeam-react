@@ -8,14 +8,6 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
 
-//   const ome = () => {
-// setShowHome(true)
-// setShowServices(false)
-// setShowCareers(false)
-// setShowShop(false)
-// setShowAbout(false)
-//   }
-
   return (
     <Nav>
       <Logo>

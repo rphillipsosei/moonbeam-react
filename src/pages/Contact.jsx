@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export default function Contact() {
   return (
-    <ContactContainer id="shop">
-      <ContactContent id="shop">
+    <ContactContainer>
+      <ContactContent>
         <ContactTitle>Contact</ContactTitle>
        
       </ContactContent>
@@ -17,16 +17,15 @@ export default function Contact() {
 
 const ContactContainer = styled.div`
   border: 3px solid red;
-  // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
   margin-top: 1rem;
-  //  margin: 0;
   margin-bottom: 20rem;
+  border: 3px solid green;
 `;
 
 const ContactContent = styled.div`
-  // border: 3px solid yellow;
+  border: 3px solid yellow;
   // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
@@ -50,5 +49,6 @@ const ContactTitle = styled.div`
     font-size: 20px;
     font-weight: normal;
     font-style: italic;
+    border: 3px solid blue;
   }
 `;
