@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import diversity from "../assets/brickwall.jpg"
 import { Button } from "react-bootstrap";
+import jobApp from "../assets/jobApp.pdf";
 
 export default function Careers() {
   return (
@@ -32,6 +33,10 @@ Join our diverse, multi-faceted team.
                 accessibility, or life challenges such as addition,
                 incarceration, and/or physical/mental health , you are
                 encouraged <br></br>to apply. <br></br> <br></br>Tell us your story!
+                
+                <br></br><br></br>
+                <a href={jobApp} download >Download application</a>
+                
               </h6>
               <Button fullWidth  variant="primary" type="submit" >Apply</Button>
        </CareersBox>
