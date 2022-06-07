@@ -33,12 +33,15 @@ Join our diverse, multi-faceted team.
                 accessibility, or life challenges such as addition,
                 incarceration, and/or physical/mental health , you are
                 encouraged <br></br>to apply. <br></br> <br></br>Tell us your story!
-                
+
                 <br></br><br></br>
-                <a href={jobApp} download >Download application</a>
-                
+                  Click below to download a PDF of the applciation. Please fill it out and email it to hiring@moonbeamtrading.ca  
+                  <br></br><br></br>
+
+                  <Button fullWidth  variant="primary" type="submit" href={jobApp} download >Apply</Button>
+
               </h6>
-              <Button fullWidth  variant="primary" type="submit" >Apply</Button>
+
        </CareersBox>
       </CareersContent>
     </CareersContainer>
