@@ -4,12 +4,18 @@ import shipping from "../assets/shipping.jpg";
 import ecommerce from "../assets/ecommerce.jpg";
 import technology from "../assets/programmer.jpg";
 import farmer from "../assets/farmer.jpg";
-import homebg from "../assets/bigdata.jpg";
-import homebgblur from "../assets/image.webp";
+import {Helmet} from 'react-helmet'
 export default function Services() {
   return (
-    
+ 
     <ServicesContainer id="services">
+      
+         <div>
+    <Helmet>
+      <title>Moonbeam Trading Co. | Services</title>
+    </Helmet>
+    </div>
+    
       <ServicesContent id="services">
         <ServicesTitle>
           SERVICES
@@ -121,7 +127,7 @@ const ServicesContent = styled.div`
   // padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   background-color: white;
-  // background-image: url(${homebgblur});
+
   color: #000000;
   flex-direction: column;
 `;

@@ -3,16 +3,22 @@ import styled from "styled-components";
 import onlineshopping from "../assets/shopping-cart.jpg";
 import auction from "../assets/auction2.png";
 import shopify from "../assets/shopify.png";
-import background from "../assets/growth.webp"
 import { Button } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 export default function Shop() {
   return (
     <ShopContainer>
+      <div>
+        <Helmet>
+          <title>Moonbeam Trading Co. | Shop</title>
+        </Helmet>
+      </div>
       <ShopContent>
-        <ShopTitle>SHOP
+        <ShopTitle>
+          SHOP
           <h3>
-          Browse a collection of fair trade, sustainable items from our
-                  partners.
+            Browse a collection of fair trade, sustainable items from our
+            partners.
           </h3>
         </ShopTitle>
         <ShopBox>
@@ -21,25 +27,31 @@ export default function Shop() {
             <ShopifyRow>
               <ShopifyIcon src={shopify} />
               <p>
-                <h3><b>SHOPIFY</b></h3>
-                <i>
-                Discover a wide variety of products
-                 
-                </i><br></br><br></br>
+                <h3>
+                  <b>SHOPIFY</b>
+                </h3>
+                <i>Discover a wide variety of products</i>
+                <br></br>
+                <br></br>
                 <a href="https://moonbeam-trading-company.myshopify.com/">
-              <Button variant="success">SHOP NOW</Button>
-              </a>
+                  <Button variant="success">SHOP NOW</Button>
+                </a>
               </p>
             </ShopifyRow>
             <br></br>
             <AuctionRow>
-            <AuctionIcon src={auction} />
-            <p>
-                <h3><b>AUCTION (COMING SOON)</b></h3>
+              <AuctionIcon src={auction} />
+              <p>
+                <h3>
+                  <b>AUCTION (COMING SOON)</b>
+                </h3>
                 <i>
-                Stay tuned for more details. <br></br><br></br>
+                  Stay tuned for more details. <br></br>
+                  <br></br>
                 </i>
-              <Button disabled variant="success">BID NOW</Button>
+                <Button disabled variant="success">
+                  BID NOW
+                </Button>
               </p>
             </AuctionRow>
           </ShopOptions>
@@ -68,7 +80,7 @@ const ShopContainer = styled.div`
 `;
 
 const ShopContent = styled.div`
-//   border: 3px solid yellow;
+  //   border: 3px solid yellow;
   // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
@@ -79,14 +91,13 @@ const ShopContent = styled.div`
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   // background-color: rgba(12, 121, 190, 255);
-  // background-image: url(${background});
   background-size: cover;
   color: #000000;
   flex-direction: column;
 `;
 
 const ShopTitle = styled.div`
-// background-color: rgba(37, 36, 37, 0.6);
+  // background-color: rgba(37, 36, 37, 0.6);
   // border: 3px solid rgba(12, 121, 190, 255);
   margin-top: 2rem;
   width: 800px;
@@ -97,11 +108,11 @@ const ShopTitle = styled.div`
   // margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
- display: flex;
- flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-padding-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  //  justify-content: center;
+  //  align-items: center;
+  padding-top: 0.8rem;
   h3 {
     // margin-top: -0.1rem;
     font-size: 17px;
@@ -120,7 +131,6 @@ const ShopBox = styled.div`
   margin-top: 5rem;
   align-items: center;
   justify-content: center;
-  
 `;
 
 const ShopOptions = styled.div`
@@ -132,7 +142,6 @@ const ShopOptions = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 `;
 const ShopifyRow = styled.div`
   height: 180px;
@@ -140,7 +149,7 @@ const ShopifyRow = styled.div`
   // border: 3px solid green;
   margin-top: 3rem;
   display: flex;
-//   align-items: center;
+  //   align-items: center;
   // flex-direction: column
   font-size: 16px;
 `;
@@ -150,7 +159,7 @@ const ShopifyIcon = styled.img`
   margin-left: 3.5rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
-`
+`;
 
 const AuctionIcon = styled.img`
   height: 70px;
@@ -158,17 +167,15 @@ const AuctionIcon = styled.img`
   margin-left: 7rem;
   margin-right: 3rem;
   margin-top: 1.8rem;
-
-
 `;
 
 const AuctionRow = styled.div`
-height: 180px;
-width: 600px;
+  height: 180px;
+  width: 600px;
   // border: 3px solid green;
-// margin-right: 1rem;
-display: flex;
-//   align-items: center;
-// flex-direction: column
-font-size: 16px;
-  `;
+  // margin-right: 1rem;
+  display: flex;
+  //   align-items: center;
+  // flex-direction: column
+  font-size: 16px;
+`;

@@ -1,58 +1,69 @@
 import React from "react";
 import styled from "styled-components";
-import diversity from "../assets/brickwall.jpg"
+import diversity from "../assets/brickwall.jpg";
 import { Button } from "react-bootstrap";
 import jobApp from "../assets/jobApp.pdf";
+
+import { Helmet } from "react-helmet";
 
 export default function Careers() {
   return (
     <CareersContainer id="shop">
+      <div>
+        <Helmet>
+          <title>Moonbeam Trading Co. | Careers</title>
+        </Helmet>
+      </div>
       <CareersContent id="shop">
-        <CareersTitle>CAREERS
-<h3>
-Join our diverse, multi-faceted team.
-</h3>
-          
+        <CareersTitle>
+          CAREERS
+          <h3>Join our diverse, multi-faceted team.</h3>
         </CareersTitle>
-       <CareersBox>
-      <Image src={diversity}/> <p></p><h3 >
-                <b>AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
-                PERSPECTIVE...
-                </b>
-             
-
-              </h3>
-              
-              <h6 >
-                We recognize all of the different life transitions that people
-                may encounter in life. <br></br>
-                We value everyone's opinion, and believe the key to success is
-                having a multitude of perspectives.
-                <br></br>
-                <br></br>
-                If you have faced any career obstacles relating to
-                accessibility, or life challenges such as addition,
-                incarceration, and/or physical/mental health , you are
-                encouraged <br></br>to apply. <br></br> <br></br>Tell us your story!
-
-                <br></br><br></br>
-                  Click below to download a PDF of the applciation. Please fill it out and email it to hiring@moonbeamtrading.ca  
-                  <br></br><br></br>
-
-                  <Button fullWidth  variant="primary" type="submit" href={jobApp} download >Apply</Button>
-
-              </h6>
-
-       </CareersBox>
+        <CareersBox>
+          <Image src={diversity} /> <p></p>
+          <h3>
+            <b>
+              AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
+              PERSPECTIVE...
+            </b>
+          </h3>
+          <h6>
+            We recognize all of the different life transitions that people may
+            encounter in life. <br></br>
+            We value everyone's opinion, and believe the key to success is
+            having a multitude of perspectives.
+            <br></br>
+            <br></br>
+            If you have faced any career obstacles relating to accessibility, or
+            life challenges such as addition, incarceration, and/or
+            physical/mental health , you are encouraged <br></br>to apply.{" "}
+            <br></br> <br></br>Tell us your story!
+            <br></br>
+            <br></br>
+            Click below to download a PDF of the applciation. Please fill it out
+            and email it to hiring@moonbeamtrading.ca
+            <br></br>
+            <br></br>
+            <Button
+              fullWidth
+              variant="primary"
+              type="submit"
+              href={jobApp}
+              download
+            >
+              Apply
+            </Button>
+          </h6>
+        </CareersBox>
       </CareersContent>
     </CareersContainer>
   );
 }
 
 const Image = styled.img`
-border-radius: 15px;
-height: 250px;
-`
+  border-radius: 15px;
+  height: 250px;
+`;
 
 const CareersContainer = styled.div`
   // border: 3px solid red;
@@ -106,7 +117,7 @@ h3 {
 `;
 
 const CareersBox = styled.div`
-margin-top: 3rem;
+  margin-top: 3rem;
   // border: 3px solid pink;
   height: 80%;
   width: 50%;
@@ -115,20 +126,19 @@ margin-top: 3rem;
   // margin-top: -2rem;
   align-items: flex-start;
   justify-content: center;
-p {
-  // max-height: 300px;
-}
-h3 {
-  margin-top: -4rem;
-}
+  p {
+    // max-height: 300px;
+  }
+  h3 {
+    margin-top: -4rem;
+  }
   h6 {
     margin-top: -4rem;
     font-size: 16px;
-  //  width: 600px;
-  //  height: 180px;
-  //  border: 3px solid orange;
+    //  width: 600px;
+    //  height: 180px;
+    //  border: 3px solid orange;
     text-align: center;
-    margin-bottom: -5rem
+    margin-bottom: -5rem;
   }
 `;
-

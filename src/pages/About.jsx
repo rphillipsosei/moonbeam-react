@@ -1,10 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import growth from "../assets/growth.jpg"
+import {Helmet} from 'react-helmet'
 
 export default function About() {
   return (
+   
     <AboutContainer id="shop">
+       <div>
+    <Helmet>
+      <title>Moonbeam Trading Co. | Careers</title>
+    </Helmet>
+  </div>
       <AboutContent id="shop">
         <AboutTitle>ABOUT US</AboutTitle>
         {/* <Image src={growth}/> */}

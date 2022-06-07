@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import classes from "./Contact.Module.css";
 import { Form, Button } from "react-bootstrap";
+import {Helmet} from 'react-helmet'
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -47,6 +48,11 @@ export default function Contact() {
 
   return (
     <ContactContainer>
+         <div>
+    <Helmet>
+      <title>Moonbeam Trading Co. | Services</title>
+    </Helmet>
+    </div>
       <ContactContent>
         <ContactTitle>
           CONTACT

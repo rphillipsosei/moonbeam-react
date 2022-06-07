@@ -9,12 +9,18 @@ import About from "./About.jsx"
 import Contact from "./Contact.jsx" 
 import homebg from "../assets/bigdata.jpg"
 import Apply from "./Apply.jsx"
-
+import {Helmet} from 'react-helmet'
 
 export default function Home() {
   return (
+    
 <AppContainer>
 
+    <div>
+      <Helmet>
+        <title>Moonbeam Trading Co. | Home</title>
+      </Helmet>
+      </div>
     <HomeContainer>
       <head>
         <title>Moonbeam Trading Co.</title>
