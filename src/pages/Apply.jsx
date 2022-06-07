@@ -1,76 +1,76 @@
-import React, { useState, useForm } from "react";
-import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faSpinner } from '@fortawesome/free-solid-svg-icons'
-import classes from "./Apply.Module.css";
-import { Form, Button } from "react-bootstrap";
-import * as AiIcons from "react-icons/ai";
+// import React, { useState, useForm } from "react";
+// import styled from "styled-components";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCheck, faSpinner } from '@fortawesome/free-solid-svg-icons'
+// import classes from "./Apply.Module.css";
+// import { Form, Button } from "react-bootstrap";
+// import * as AiIcons from "react-icons/ai";
 
 
-export default function Apply() {
-    const [state, handleSubmit] = useForm("xknyqzly");
-    window.onbeforeunload = () => {
-      for (const form of document.getElementsByTagName("form")) {
-        form.reset();
-      }
-    };
-    if (state.succeeded) {
-      return (
-        <p>
-          Submitted sucessfully!
-          <h6>
-            Return to <a href="/">home page.</a>
-          </h6>
-        </p>
-      );
-    }
+// export default function Apply() {
+//     const [state, handleSubmit] = useForm("xknyqzly");
+//     window.onbeforeunload = () => {
+//       for (const form of document.getElementsByTagName("form")) {
+//         form.reset();
+//       }
+//     };
+//     if (state.succeeded) {
+//       return (
+//         <p>
+//           Submitted sucessfully!
+//           <h6>
+//             Return to <a href="/">home page.</a>
+//           </h6>
+//         </p>
+//       );
+//     }
 
-  return (
-    <ApplyContainer>
-      <ApplyContent>
-        <ApplyTitle>
-          Apply
-          <h3>
-            Any questions or inquiries? Apply us to get more information!
-          </h3>
-        </ApplyTitle>
-        <h6 align="center">
-            <b>SEE OUR CURRENT OPENINGS:</b></h6>
-            <br></br>
-            <a href="https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital">
-              <br></br>Data Scientist - Job ID MTC2101DS
-            </a>{" "}
-            <br></br>
-            <br></br>
-            <div className="accessibility">
-              <i>
-                Think you might not qualify for any of the available positions
-                above? Don't hesitate to apply to the position(s) of your choice
-                using the form below or fill out the following PDF and email it
-                to hiring@moonbeamtrading.ca. <br></br>At Moonbeam, we hire from
-                a holistic perspective and see barriers to employment as
-                potential strengths!
-              </i>{" "}
-              <br></br> <br></br> <br></br>
-              <b>
-                If you prefer, click here to view a PDF version of the
-                application
-              </b>
-              <br></br>
-              <div align="center">
-                <a href="https://docdro.id/MwY5KLs">
-                  <br></br>
-                  <AiIcons.AiOutlineFilePdf  />
-                </a>
-              </div>
-            </div>
-            <br></br>
-            <br></br>
-            <h6 className="apply-instructions">
-              Please answer all required questions at the minimum (marked with a
-              star). <br></br>You can provide as little or as much detail as you
-              would like for the open-ended questions.
-            </h6>
+//   return (
+//     <ApplyContainer>
+//       <ApplyContent>
+//         <ApplyTitle>
+//           Apply
+//           <h3>
+//             Any questions or inquiries? Apply us to get more information!
+//           </h3>
+//         </ApplyTitle>
+//         <h6 align="center">
+//             <b>SEE OUR CURRENT OPENINGS:</b></h6>
+//             <br></br>
+//             <a href="https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital">
+//               <br></br>Data Scientist - Job ID MTC2101DS
+//             </a>{" "}
+//             <br></br>
+//             <br></br>
+//             <div className="accessibility">
+//               <i>
+//                 Think you might not qualify for any of the available positions
+//                 above? Don't hesitate to apply to the position(s) of your choice
+//                 using the form below or fill out the following PDF and email it
+//                 to hiring@moonbeamtrading.ca. <br></br>At Moonbeam, we hire from
+//                 a holistic perspective and see barriers to employment as
+//                 potential strengths!
+//               </i>{" "}
+//               <br></br> <br></br> <br></br>
+//               <b>
+//                 If you prefer, click here to view a PDF version of the
+//                 application
+//               </b>
+//               <br></br>
+//               <div align="center">
+//                 <a href="https://docdro.id/MwY5KLs">
+//                   <br></br>
+//                   <AiIcons.AiOutlineFilePdf  />
+//                 </a>
+//               </div>
+//             </div>
+//             <br></br>
+//             <br></br>
+//             <h6 className="apply-instructions">
+//               Please answer all required questions at the minimum (marked with a
+//               star). <br></br>You can provide as little or as much detail as you
+//               would like for the open-ended questions.
+//             </h6>
         {/* <ApplyBox>
           <Form 
           style={form} 
@@ -233,85 +233,85 @@ export default function Apply() {
                 </Button>
           </Form>
         </ApplyBox> */}
-      </ApplyContent>
-    </ApplyContainer>
-  );
-}
+//       </ApplyContent>
+//     </ApplyContainer>
+//   );
+// }
 
-const ApplyContainer = styled.div`
-  border: 3px solid red;
-  height: 84.5vh;
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 20rem;
-  border: 3px solid green;
-`;
+// const ApplyContainer = styled.div`
+//   border: 3px solid red;
+//   height: 84.5vh;
+//   width: 100%;
+//   margin-top: 1rem;
+//   margin-bottom: 20rem;
+//   border: 3px solid green;
+// `;
 
-const ApplyContent = styled.div`
-  border: 3px solid yellow;
-  // margin: 2rem 0;
-  height: 100%;
-  padding: 1rem 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 2rem;
-  font-family: "Comfortaa", sans-serif;
-  //   background-color: rgba(12, 121, 190, 255);
-  //   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  color: #000000;
-  flex-direction: column;
-`;
+// const ApplyContent = styled.div`
+//   border: 3px solid yellow;
+//   // margin: 2rem 0;
+//   height: 100%;
+//   padding: 1rem 0;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-start;
+//   padding-top: 2rem;
+//   font-family: "Comfortaa", sans-serif;
+//   //   background-color: rgba(12, 121, 190, 255);
+//   //   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+//   color: #000000;
+//   flex-direction: column;
+// `;
 
-const ApplyTitle = styled.div`
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
-  margin-top: 5rem;
-  width: 800px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin-bottom: 1rem;
-  font-size: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  //  justify-content: center;
-  //  align-items: center;
-  padding-top: 0.8rem;
-  h3 {
-    // margin-top: -0.1rem;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: italic;
-  }
-`;
+// const ApplyTitle = styled.div`
+//   // background-color: rgba(37, 36, 37, 0.6);
+//   // border: 3px solid rgba(12, 121, 190, 255);
+//   margin-top: 5rem;
+//   width: 800px;
+//   height: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // margin-bottom: 1rem;
+//   font-size: 50px;
+//   text-align: center;
+//   display: flex;
+//   flex-direction: column;
+//   //  justify-content: center;
+//   //  align-items: center;
+//   padding-top: 0.8rem;
+//   h3 {
+//     // margin-top: -0.1rem;
+//     font-size: 17px;
+//     font-weight: normal;
+//     font-style: italic;
+//   }
+// `;
 
-const ApplyBox = styled.div`
-//   border: 3px solid hotpink;
-  height: 500px;
-  width: 80%;
-  margin-top: 3rem;
-  display: flex;
-  // flex-wrap: wrap;
-  // margin-top: 2rem;
-  align-items: center;
-  justify-content: center;
-`;
+// const ApplyBox = styled.div`
+// //   border: 3px solid hotpink;
+//   height: 500px;
+//   width: 80%;
+//   margin-top: 3rem;
+//   display: flex;
+//   // flex-wrap: wrap;
+//   // margin-top: 2rem;
+//   align-items: center;
+//   justify-content: center;
+// `;
 
-const formLabel = {
-  fontSize: "20px",
-  textAlign: "center",
-};
-const form = {
-  width: "600px",
-  display: "flex",
-  flexDirection: "column",
-  textAlign: "center",
-};
+// const formLabel = {
+//   fontSize: "20px",
+//   textAlign: "center",
+// };
+// const form = {
+//   width: "600px",
+//   display: "flex",
+//   flexDirection: "column",
+//   textAlign: "center",
+// };
 
-const formField = {
-  marginBottom: "3rem",
-};
+// const formField = {
+//   marginBottom: "3rem",
+// };
