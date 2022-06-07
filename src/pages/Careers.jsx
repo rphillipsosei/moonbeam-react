@@ -15,8 +15,9 @@ Join our diverse, multi-faceted team.
         </CareersTitle>
        <CareersBox>
       <Image src={diversity}/> <p></p><h3 >
-                AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
+                <b>AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
                 PERSPECTIVE...
+                </b>
              
 
               </h3>
@@ -46,7 +47,7 @@ height: 250px;
 `
 
 const CareersContainer = styled.div`
-  border: 3px solid red;
+  // border: 3px solid red;
   // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
@@ -98,7 +99,7 @@ h3 {
 
 const CareersBox = styled.div`
 margin-top: 3rem;
-  border: 3px solid pink;
+  // border: 3px solid pink;
   height: 80%;
   width: 50%;
   display: flex;
@@ -114,10 +115,10 @@ h3 {
 }
   h6 {
     margin-top: -4rem;
-    font-size: 14px;
+    font-size: 16px;
   //  width: 600px;
   //  height: 180px;
-   border: 3px solid orange;
+  //  border: 3px solid orange;
     text-align: center;
     margin-bottom: -5rem
   }

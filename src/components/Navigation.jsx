@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 import React from "react";
-import logo from "../assets/moonbeam-transparent.png"
+import logo from "../assets/moonbeam-logo.png"
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   const [showHome, setShowHome] = useState(true)
@@ -19,11 +20,22 @@ export default function Navigation() {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLinks onClick={()=> setShowHome()}>SERVICES</MenuLinks>
+      
+      <NavLink to="/services" activeClassName="current" exact>
+        <MenuLinks>SERVICES</MenuLinks>
+      </NavLink>
+      <NavLink to="/shop" activeClassName="current" exact>
         <MenuLinks>SHOP</MenuLinks>
+      </NavLink>
+      <NavLink to="/careers" activeClassName="current" exact>
         <MenuLinks>CAREERS</MenuLinks>
+      </NavLink>
+      <NavLink to="/about" activeClassName="current" exact>
         <MenuLinks>ABOUT</MenuLinks>
+      </NavLink>
+      <NavLink to="/contact" activeClassName="current" exact>
         <MenuLinks>CONTACT</MenuLinks>
+      </NavLink>
       </Menu>
     </Nav>
   );
@@ -59,6 +71,7 @@ const Nav = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
+
   span {
     height: 2px;
     width: 25px;
@@ -72,6 +85,7 @@ const Nav = styled.div`
 `;
 
   const Menu = styled.div`
+  margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +102,7 @@ const Nav = styled.div`
     }
     `;
 
-  const MenuLinks = styled.a`
+  const MenuLinks = styled.li`
   text-decoration: none;
   font-family: Comfortaa;
   font-size: 16px;
@@ -98,9 +112,10 @@ const Nav = styled.div`
   text-align: center;
   color: rgba(12,121,190,255);
 transition: all 0.3s ease-in;
-
+list-style: none;
 &:hover {
   color: #000000;
+  text-decoration: none;
 }
 
 

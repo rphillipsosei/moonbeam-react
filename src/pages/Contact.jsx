@@ -114,16 +114,16 @@ export default function Contact() {
 }
 
 const ContactContainer = styled.div`
-  border: 3px solid red;
+  // border: 3px solid red;
   height: 84.5vh;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 20rem;
-  border: 3px solid green;
+  // border: 3px solid green;
 `;
 
 const ContactContent = styled.div`
-  border: 3px solid yellow;
+  // border: 3px solid yellow;
   // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;

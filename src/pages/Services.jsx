@@ -8,6 +8,7 @@ import homebg from "../assets/bigdata.jpg";
 import homebgblur from "../assets/image.webp";
 export default function Services() {
   return (
+    
     <ServicesContainer id="services">
       <ServicesContent id="services">
         <ServicesTitle>
@@ -20,11 +21,11 @@ export default function Services() {
         <ServicesBox>
           <Hexes>
             <HexContainer>
-              <Hex>
-                <HexBG>
+                {/* <Hex>
+                  <HexBG> */}
                   <Image alt="" src={technology}></Image>
-                </HexBG>
-              </Hex>
+                {/* </HexBG>
+              </Hex> */}
               <b>TECHNOLOGY</b>
               <br></br>
               <br></br>
@@ -32,15 +33,15 @@ export default function Services() {
               technology services and consultation to businesses in a variety of
               sectors. These include: software engineering, Software As A
               Service (SaaS), predictive analytics, machine learning/artificial
-              intelligence.
+              intelligence, and more.
             </HexContainer>
             <Connector />
             <HexContainer>
-              <Hex>
-                <HexBG>
+              {/* <Hex>
+                <HexBG> */}
                   <Image alt="" src={farmer}></Image>
-                </HexBG>
-              </Hex>
+                {/* </HexBG>
+              </Hex> */}
               <b>AGRIFOODS</b>
               <br></br>
               <br></br>
@@ -52,11 +53,11 @@ export default function Services() {
             </HexContainer>
             <Connector />
             <HexContainer>
-              <Hex>
-                <HexBG>
+              {/* <Hex>
+                <HexBG> */}
                   <Image alt="" src={shipping}></Image>
-                </HexBG>
-              </Hex>
+                  {/* </HexBG>
+                </Hex> */}
               <b>IMPORTS & EXPORTS</b>
               <br></br>
               <br></br>
@@ -68,11 +69,11 @@ export default function Services() {
             </HexContainer>
             <Connector />
             <HexContainer>
-              <Hex>
-                <HexBG>
+              {/* <Hex>
+                <HexBG> */}
                   <Image alt="" src={ecommerce}></Image>
-                </HexBG>
-              </Hex>
+                {/* </HexBG>
+              </Hex> */}
               <b>E-COMMERCE</b>
               <br></br>
               <br></br>
@@ -93,11 +94,13 @@ export default function Services() {
 const Image = styled.img`
   height: 300px;
   width: 400px;
-  margin-left: -2.5rem;
+  // margin-left: -2.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
 `;
 
 const ServicesContainer = styled.div`
-  border: 3px solid red;
+  // border: 3px solid red;
   // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
@@ -115,7 +118,7 @@ const ServicesContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 2rem;
+  // padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   background-color: white;
   // background-image: url(${homebgblur});
@@ -149,7 +152,7 @@ padding-top: 0.8rem;
 `;
 
 const ServicesBox = styled.div`
-  // border: 2px solid white;
+  // border: 2px solid green;
   // background-color: rgba(37, 36, 37, 0.3);
   height: 550px;
   width: 1700px;
@@ -190,43 +193,43 @@ const Hexes = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-const Hex = styled.div`
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  width: 320px;
-  height: 277.12px; /* width * 0.866 */
-  background: rgba(12, 121, 190, 255);
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-  -webkit-clip-path: polygon(
-    0% 50%,
-    25% 0%,
-    75% 0%,
-    100% 50%,
-    75% 100%,
-    25% 100%
-  );
-  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-`;
+// const Hex = styled.div`
+//   display: block;
+//   margin: 0 auto;
+//   position: relative;
+//   width: 320px;
+//   height: 277.12px; /* width * 0.866 */
+//   background: rgba(12, 121, 190, 255);
+//   box-sizing: border-box;
+//   margin-bottom: 1rem;
+//   -webkit-clip-path: polygon(
+//     0% 50%,
+//     25% 0%,
+//     75% 0%,
+//     100% 50%,
+//     75% 100%,
+//     25% 100%
+//   );
+//   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+// `;
 
-const HexBG = styled.div`
-  position: absolute;
-  background-color: white; /*color of the main-background*/
-  top: 2px; /* equal to border thickness */
-  left: 2px; /* equal to border thickness */
-  width: 316px; /* container height - (border thickness * 2) */
-  height: 273.12px; /* container height - (border thickness * 2) */
-  -webkit-clip-path: polygon(
-    0% 50%,
-    25% 0%,
-    75% 0%,
-    100% 50%,
-    75% 100%,
-    25% 100%
-  );
-  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-`;
+// const HexBG = styled.div`
+//   position: absolute;
+//   background-color: white; /*color of the main-background*/
+//   top: 2px; /* equal to border thickness */
+//   left: 2px; /* equal to border thickness */
+//   width: 316px; /* container height - (border thickness * 2) */
+//   height: 273.12px; /* container height - (border thickness * 2) */
+//   -webkit-clip-path: polygon(
+//     0% 50%,
+//     25% 0%,
+//     75% 0%,
+//     100% 50%,
+//     75% 100%,
+//     25% 100%
+//   );
+//   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+// `;
 
 const Connector = styled.div`
   width: 50px;

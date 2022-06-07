@@ -8,11 +8,13 @@ import Careers from "./Careers.jsx"
 import About from "./About.jsx"
 import Contact from "./Contact.jsx" 
 import homebg from "../assets/bigdata.jpg"
+import Apply from "./Apply.jsx"
+
 
 export default function Home() {
   return (
 <AppContainer>
-<Navigation/>
+
     <HomeContainer>
       <head>
         <title>Moonbeam Trading Co.</title>
@@ -26,11 +28,12 @@ export default function Home() {
         </HomeTitle>
       </HomeContent>
     </HomeContainer>
-    <Services/>
-    <Shop/>
-    <Careers/>
-    <About/>
-    <Contact/>
+    {/* <Services/> */}
+    {/* <Shop/> */}
+    {/* <Careers/> */}
+    {/* <About/> */}
+    {/* <Contact/> */}
+    {/* <Apply/> */}
     </AppContainer>
 
   );
