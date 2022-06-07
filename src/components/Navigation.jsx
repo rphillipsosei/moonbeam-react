@@ -100,7 +100,7 @@ const Nav = styled.div`
       max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
       transition: max-height 0.3s ease-in;
       width: 100%;
-      border: 3px solid orange;
+      // border: 3px solid orange;
       background-color: #ffff;
     }
     `;
