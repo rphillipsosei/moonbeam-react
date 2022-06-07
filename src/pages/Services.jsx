@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
-
+import shipping from "../assets/shipping.jpg"
+import ecommerce from "../assets/ecommerce.jpg"
+import technology from "../assets/programmer.jpg"
+import farmer from "../assets/farmer.jpg"
 export default function Services() {
   return (
-    // <ServicesContainer id="services">
+    <ServicesContainer id="services">
       <ServicesContent id="services">
         <ServicesTitle>Services</ServicesTitle>
 
@@ -12,7 +14,7 @@ export default function Services() {
           <HexContainer>
             <Hex>
               <HexBG>
-                <Image src="/programmer.jpg" layout="fill"></Image>
+                <Image alt="" src={technology} ></Image>
               </HexBG>
             </Hex>
             TECHNOLOGY<br></br>
@@ -27,7 +29,7 @@ export default function Services() {
           <HexContainer>
             <Hex>
               <HexBG>
-                <Image src="/farmer.jpg" layout="fill"></Image>
+                <Image alt="" src={farmer}></Image>
               </HexBG>
             </Hex>
             AGRIFOODS<br></br>
@@ -42,7 +44,7 @@ export default function Services() {
           <HexContainer>
             <Hex>
               <HexBG>
-                <Image src="/shipping.jpg" layout="fill"></Image>
+                <Image alt="" src={shipping} ></Image>
               </HexBG>
             </Hex>
             IMPORTS & EXPORTS<br></br>
@@ -57,7 +59,7 @@ export default function Services() {
           <HexContainer>
             <Hex>
               <HexBG>
-                <Image src="/ecommerce.jpg" layout="fill"></Image>
+                <Image alt="" src={ecommerce} ></Image>
               </HexBG>
             </Hex>
             E-COMMERCE<br></br>
@@ -72,6 +74,23 @@ export default function Services() {
     // </ServicesContainer>
   );
 }
+
+const Image = styled.img  `
+  height: 300px;
+  width: 400px;
+ margin-left: -2.5rem;
+
+
+`
+
+const ServicesContainer = styled.div`
+// border: 3px solid red;
+// padding: 0.5rem;
+height: 84.5vh;
+width: 100%;
+margin-top: 1rem;
+//  margin: 0;
+`
 
 const ServicesContent = styled.div`
   // border: 3px solid yellow;
@@ -113,6 +132,7 @@ const ServicesBox = styled.div`
 `;
 
 const HexContainer = styled.div`
+
   width: 322px;
   height: 650px;
   // border: 3px solid white;
@@ -128,12 +148,13 @@ const HexContainer = styled.div`
 `;
 
 const Hex = styled.div`
+
   display: block;
   margin: 0 auto;
   position: relative;
   width: 320px;
   height: 277.12px; /* width * 0.866 */
-  background: rgba(12, 121, 190, 255);
+  background: white;
   box-sizing: border-box;
   margin-bottom: 1rem;
   -webkit-clip-path: polygon(
@@ -148,8 +169,9 @@ const Hex = styled.div`
 `;
 
 const HexBG = styled.div`
+
   position: absolute;
-  background-color: orange; /*color of the main-background*/
+  background-color: white; /*color of the main-background*/
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */
   width: 316px; /* container height - (border thickness * 2) */

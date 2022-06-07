@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-
-
+import React from "react";
+import logo from "../assets/moonbeam-transparent.png"
 
 export default function Navigation() {
   const [showHome, setShowHome] = useState(true)
@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <Nav>
       <Logo>
-        <img src="/moonbeam-transparent.png" height={80} width={80} />
+        <img src={logo} height={80} width={80} />
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
