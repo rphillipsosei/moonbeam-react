@@ -11,9 +11,11 @@ export default function Navigation() {
 
   return (
     <Nav>
+      <NavLink to="/">
       <Logo>
         <img src={logo} height={80} width={80} />
       </Logo>
+      </NavLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
@@ -63,6 +65,7 @@ const Nav = styled.div`
     // border: 3px solid hotpink;
     text-decoration: none;
     margin-bottom: 0.7rem;
+    cursor: pointer
     `;
 
 

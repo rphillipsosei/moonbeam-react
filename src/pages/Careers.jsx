@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import diversity from "../assets/brickwall.jpg"
 import { Button } from "react-bootstrap";
+import jobApp from "../assets/jobApp.pdf";
 
 export default function Careers() {
   return (
@@ -33,8 +34,15 @@ Join our diverse, multi-faceted team.
                 accessibility, or life challenges such as addition,
                 incarceration, and/or physical/mental health , you are
                 encouraged <br></br>to apply. <br></br> <br></br>Tell us your story!
+
+                <br></br><br></br>
+                  Click below to download a PDF of the applciation. Please fill it out and email it to hiring@moonbeamtrading.ca  
+                  <br></br><br></br>
+
+                  <Button fullWidth  variant="primary" type="submit" href={jobApp} download >Apply</Button>
+
               </h6>
-              <Button fullWidth  variant="primary" type="submit" >Apply</Button>
+
        </CareersBox>
       </CareersContent>
     </CareersContainer>
