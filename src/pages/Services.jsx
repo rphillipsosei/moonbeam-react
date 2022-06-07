@@ -4,6 +4,7 @@ import shipping from "../assets/shipping.jpg"
 import ecommerce from "../assets/ecommerce.jpg"
 import technology from "../assets/programmer.jpg"
 import farmer from "../assets/farmer.jpg"
+
 export default function Services() {
   return (
     <ServicesContainer id="services">
@@ -84,18 +85,19 @@ const Image = styled.img  `
 `
 
 const ServicesContainer = styled.div`
-// border: 3px solid red;
+border: 3px solid red;
 // padding: 0.5rem;
 height: 84.5vh;
 width: 100%;
 margin-top: 1rem;
 //  margin: 0;
+margin-bottom: 20rem;
 `
 
 const ServicesContent = styled.div`
   // border: 3px solid yellow;
   // margin: 2rem 0;
-  height: 87vh;
+  height: 100%;
   padding: 1rem 0;
   width: 100%;
   display: flex;
@@ -110,7 +112,7 @@ const ServicesContent = styled.div`
 `;
 
 const ServicesTitle = styled.div`
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 70px;
   text-align: center;
   h3 {

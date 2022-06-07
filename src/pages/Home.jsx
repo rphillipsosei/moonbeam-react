@@ -1,11 +1,15 @@
 
 import styled from "styled-components";
-import React, {useState} from 'react'
+import React from 'react'
 import Services from "./Services";
+import Shop from "./Shop";
 import Navigation from "../components/Navigation";
+import Careers from "./Careers.jsx"
+import About from "./About.jsx"
+import Contact from "./Contact.jsx" 
+
 
 export default function Home() {
-  const [showHome, setShowHome] = useState(true)
   return (
 <AppContainer>
 <Navigation/>
@@ -23,6 +27,10 @@ export default function Home() {
       </HomeContent>
     </HomeContainer>
     <Services/>
+    <Shop/>
+    <Careers/>
+    <About/>
+    <Contact/>
     </AppContainer>
 
   );
