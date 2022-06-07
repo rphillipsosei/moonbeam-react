@@ -7,7 +7,7 @@ import Navigation from "../components/Navigation";
 import Careers from "./Careers.jsx"
 import About from "./About.jsx"
 import Contact from "./Contact.jsx" 
-
+import homebg from "../assets/bigdata.jpg"
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
 const AppContainer = styled.div`
 padding: 1rem;
 height: 100vh;
-border: 3px solid green;
+// border: 3px solid green;
 // display: flex;
 // flex-direction: column;
 `
@@ -49,7 +49,7 @@ border: 3px solid green;
 
 
 const HomeContainer = styled.div`
-  border: 3px solid red;
+  // border: 3px solid red;
   // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
@@ -58,7 +58,7 @@ const HomeContainer = styled.div`
 margin-bottom: 20rem;
 `;
 const HomeContent = styled.div`
-  border: 3px solid yellow;
+  // border: 3px solid yellow;
   // margin: 0.7rem 0;
   height: 100%;
   width: 100%;
@@ -67,13 +67,23 @@ const HomeContent = styled.div`
   justify-content: center;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  background-color: rgba(12, 121, 190, 255);
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  // background-color: rgba(12, 121, 190, 255);
+  background-image: url(${homebg});
   color: #ffff;
   flex-direction: column;
 `;
 
 const HomeTitle = styled.div`
+background-color: rgba(37, 36, 37, 0.8);
+height: 200px;
+width: 1250px;
+display: flex;
+align-items: center;
+flex-direction: column;
+// align-items: center;
+justify-content: center;
+// border-radius: 15px;
+border: 2px solid #ffff;
   margin-top: 3rem;
   font-size: 70px;
   text-align: center;
