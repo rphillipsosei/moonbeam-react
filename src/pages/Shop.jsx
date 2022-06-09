@@ -63,7 +63,6 @@ export default function Shop() {
 
 const Image = styled.img`
   height: 350px;
-  //   margin-left: -2.5rem;
   margin-right: 5rem;
   border-radius: 15px;
   // border: 3px solid rgba(12, 121, 190, 255);
