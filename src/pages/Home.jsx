@@ -78,6 +78,7 @@ const HomeContent = styled.div`
   font-family: "Comfortaa", sans-serif;
   // background-color: rgba(12, 121, 190, 255);
   background-image: url(${homebg});
+  background-size: cover;
   color: #ffff;
   flex-direction: column;
 `;
@@ -100,5 +101,26 @@ border: 2px solid #ffff;
     font-size: 20px;
     font-weight: normal;
     font-style: italic;
+  }
+
+  /* ========== MEDIA QUARIES for title ========== */
+  @media (max-width: 1368px) {
+    width: 1000px;
+    font-size: 60px;
+  }
+  @media (max-width: 1067px) {
+    width: 600px;
+    font-size: 50px;
+    height: 300px;
+  }
+  @media (max-width: 700px) {
+    width: 370px;
+    font-size: 50px;
+    height: 300px;
+  }
+  @media (max-width: 420px) {
+    width: 270px;
+    height: 300px;
+    font-size: 30px;
   }
 `;
