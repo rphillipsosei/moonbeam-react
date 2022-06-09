@@ -7,13 +7,13 @@ import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 export default function Shop() {
   return (
-    <ShopContainer>
+    <ShopContent>
       <div>
         <Helmet>
           <title>Moonbeam Trading Co. | Shop</title>
         </Helmet>
       </div>
-      <ShopContent>
+  
         <ShopTitle>
           SHOP
           <h3>
@@ -57,37 +57,38 @@ export default function Shop() {
           </ShopOptions>
         </ShopBox>
       </ShopContent>
-    </ShopContainer>
+
   );
 }
 
 const Image = styled.img`
   height: 350px;
-  //   margin-left: -2.5rem;
   margin-right: 5rem;
   border-radius: 15px;
   // border: 3px solid rgba(12, 121, 190, 255);
+
+  @media (max-width: 1180px) {
+    height: 290px;
+    margin-right: 0;
+  }
+  @media (max-width: 550px) {
+    height: 250px;
+  }
+  @media (max-width: 430px) {
+    height: 200px;
+  }
 `;
 
-const ShopContainer = styled.div`
-  // border: 3px solid red;
-  // padding: 0.5rem;
-  height: 84.5vh;
-  width: 100%;
-  margin-top: 1rem;
-  //  margin: 0;
-  margin-bottom: 20rem;
-`;
 
 const ShopContent = styled.div`
-  //   border: 3px solid yellow;
+    border: 3px solid yellow;
   // margin: 2rem 0;
-  height: 100%;
+  height: 90vh;
   padding: 1rem 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   // background-color: rgba(12, 121, 190, 255);
@@ -118,19 +119,44 @@ const ShopTitle = styled.div`
     font-size: 17px;
     font-weight: normal;
     font-style: italic;
+      @media (max-width: 1180px) {
+   margin-top: -1rem;
   }
+  
+    @media (max-width: 900px) {
+      font-size: 22px;
+      width: 500px;
+      font-size: 16.5px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 22px;
+    width: 400px;
+    font-size: 16.5px;
+}
+@media (max-width: 430px) {
+  font-size: 18px;
+  width: 370px;
+  font-size: 16.5px;
+}
+     }
 `;
 
 const ShopBox = styled.div`
   height: 500px;
   width: 1300px;
   // background-color: rgba(37, 36, 37, 0.3);
-  margin-top: 3rem;
   display: flex;
-  // flex-wrap: wrap;
   margin-top: 5rem;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1180px) {
+ flex-direction: column
+// margin-top: 1rem;
+  }
+  // @media (max-width: 550px) {
+  //   width:100%
+  // }
 `;
 
 const ShopOptions = styled.div`
@@ -142,6 +168,15 @@ const ShopOptions = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1180px) {
+    height: 290px;
+  }
+  @media (max-width: 550px) {
+    margin-left: 8rem;
+  }
+  @media (max-width: 430px) {
+ margin-left: 13rem;
+          }
 `;
 const ShopifyRow = styled.div`
   height: 180px;
@@ -152,6 +187,19 @@ const ShopifyRow = styled.div`
   //   align-items: center;
   // flex-direction: column
   font-size: 16px;
+  @media (max-width: 430px) {
+font-size: 15px;
+margin-left: 2rem;
+  }
+
+  h3{
+    @media (max-width: 900px) {
+      font-size: 22px;
+    }
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
+  }
 `;
 const ShopifyIcon = styled.img`
   height: 120px;
@@ -159,6 +207,14 @@ const ShopifyIcon = styled.img`
   margin-left: 3.5rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
+  @media (max-width: 1180px) {
+    height: 90px;
+    margin-left: 4.5rem;
+  }
+  @media (max-width: 430px) {
+height: 60px;
+margin-right: 1rem;
+      }
 `;
 
 const AuctionIcon = styled.img`
@@ -167,6 +223,13 @@ const AuctionIcon = styled.img`
   margin-left: 7rem;
   margin-right: 3rem;
   margin-top: 1.8rem;
+  @media (max-width: 1180px) {
+    height: 50px;
+  }
+  @media (max-width: 430px) {
+  height: 30px;
+  margin-right: 1.5rem;
+      }
 `;
 
 const AuctionRow = styled.div`
@@ -178,4 +241,16 @@ const AuctionRow = styled.div`
   //   align-items: center;
   // flex-direction: column
   font-size: 16px;
+  @media (max-width: 430px) {
+    font-size: 15px;
+    margin-left: 2rem;
+      }
+  h3{
+    @media (max-width: 900px) {
+      font-size: 22px;
+    }
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
+  }
 `;

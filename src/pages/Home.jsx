@@ -1,14 +1,7 @@
 
 import styled from "styled-components";
 import React from 'react'
-import Services from "./Services";
-import Shop from "./Shop";
-import Navigation from "../components/Navigation";
-import Careers from "./Careers.jsx"
-import About from "./About.jsx"
-import Contact from "./Contact.jsx" 
 import homebg from "../assets/bigdata.jpg"
-import Apply from "./Apply.jsx"
 import {Helmet} from 'react-helmet'
 
 export default function Home() {
@@ -21,7 +14,7 @@ export default function Home() {
         <title>Moonbeam Trading Co. | Home</title>
       </Helmet>
       </div>
-    <HomeContainer>
+    
       <head>
         <title>Moonbeam Trading Co.</title>
         <meta name="description" />
@@ -33,7 +26,7 @@ export default function Home() {
           <h3>Services that create business, customer, and community value</h3>
         </HomeTitle>
       </HomeContent>
-    </HomeContainer>
+    
     {/* <Services/> */}
     {/* <Shop/> */}
     {/* <Careers/> */}
@@ -48,25 +41,18 @@ export default function Home() {
 
 
 const AppContainer = styled.div`
-padding: 1rem;
-height: 100vh;
+// padding: 1rem;
+height: 90vh;
 // border: 3px solid green;
 // display: flex;
 // flex-direction: column;
+padding: 0.7rem;
 `
 
 
 
-const HomeContainer = styled.div`
-  // border: 3px solid red;
-  // padding: 0.5rem;
-  height: 84.5vh;
-  width: 100%;
-  margin-top: 1rem;
-//  margin: 0;
-margin-bottom: 20rem;
-`;
 const HomeContent = styled.div`
+
   // border: 3px solid yellow;
   // margin: 0.7rem 0;
   height: 100%;
@@ -76,7 +62,6 @@ const HomeContent = styled.div`
   justify-content: center;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  // background-color: rgba(12, 121, 190, 255);
   background-image: url(${homebg});
   background-size: cover;
   color: #ffff;
