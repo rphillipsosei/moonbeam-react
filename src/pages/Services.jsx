@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import shipping from "../assets/shipping.jpg";
-import ecommerce from "../assets/ecommerce.jpg";
-import technology from "../assets/programmer.jpg";
-import farmer from "../assets/farmer.jpg";
+import shipping from "../assets/shipping.webp";
+import ecommerce from "../assets/ecommerce.webp";
+import technology from "../assets/programmer.webp";
+import farmer from "../assets/farmer.webp";
 import {Helmet} from 'react-helmet'
 export default function Services() {
   return (
@@ -27,11 +27,7 @@ export default function Services() {
         <ServicesBox>
           <Hexes>
             <HexContainer>
-                {/* <Hex>
-                  <HexBG> */}
                   <Image alt="" src={technology}></Image>
-                {/* </HexBG>
-              </Hex> */}
               <b>TECHNOLOGY</b>
               <br></br>
               <br></br>
@@ -41,13 +37,9 @@ export default function Services() {
               Service (SaaS), predictive analytics, machine learning/artificial
               intelligence, and more.
             </HexContainer>
-            <Connector />
+         
             <HexContainer>
-              {/* <Hex>
-                <HexBG> */}
                   <Image alt="" src={farmer}></Image>
-                {/* </HexBG>
-              </Hex> */}
               <b>AGRIFOODS</b>
               <br></br>
               <br></br>
@@ -57,13 +49,9 @@ export default function Services() {
               specialists grow our branded product, and assist farmers to
               realize greater annual yields and improved profits.
             </HexContainer>
-            <Connector />
+        
             <HexContainer>
-              {/* <Hex>
-                <HexBG> */}
                   <Image alt="" src={shipping}></Image>
-                  {/* </HexBG>
-                </Hex> */}
               <b>IMPORTS & EXPORTS</b>
               <br></br>
               <br></br>
@@ -73,13 +61,9 @@ export default function Services() {
               sources products from around the world to meet the demands of our
               Canadian customers.
             </HexContainer>
-            <Connector />
+       
             <HexContainer>
-              {/* <Hex>
-                <HexBG> */}
                   <Image alt="" src={ecommerce}></Image>
-                {/* </HexBG>
-              </Hex> */}
               <b>E-COMMERCE</b>
               <br></br>
               <br></br>
@@ -92,14 +76,13 @@ export default function Services() {
           </Hexes>
         </ServicesBox>
       </ServicesContent>
-      //{" "}
     </ServicesContainer>
   );
 }
 
 const Image = styled.img`
-  height: 300px;
-  width: 400px;
+  // height: 300px;
+  width: 100%;
   // margin-left: -2.5rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
@@ -173,8 +156,6 @@ const HexContainer = styled.div`
   width: 350px;
   padding: 0 0.5rem;
   height: 500px;
-  // border: 3px solid white;
-  // background-color: rgba(37, 36, 37, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,68 +165,35 @@ const HexContainer = styled.div`
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  //   &filter: blur(0px);
-  // -webkit-filter: blur(0px);
+  @media (max-width: 1650px) {
+    width: 300px;
+  }
+  @media (max-width: 1320px) {
+    font-size: 15px;
+    // width: 320px;
+
+  }
 `;
 
 const Hexes = styled.div`
-  // border-radius: 10px;
-  // background-color: rgba(37, 36, 37, 0.8);
   height: 570px;
   width: 1700px;
   display: flex;
   flex-wrap: wrap;
-  // margin-top: 2rem;
   align-items: center;
   justify-content: space-around;
-`;
-// const Hex = styled.div`
-//   display: block;
-//   margin: 0 auto;
-//   position: relative;
-//   width: 320px;
-//   height: 277.12px; /* width * 0.866 */
-//   background: rgba(12, 121, 190, 255);
-//   box-sizing: border-box;
-//   margin-bottom: 1rem;
-//   -webkit-clip-path: polygon(
-//     0% 50%,
-//     25% 0%,
-//     75% 0%,
-//     100% 50%,
-//     75% 100%,
-//     25% 100%
-//   );
-//   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-// `;
+   border: 3px solid blue;
 
-// const HexBG = styled.div`
-//   position: absolute;
-//   background-color: white; /*color of the main-background*/
-//   top: 2px; /* equal to border thickness */
-//   left: 2px; /* equal to border thickness */
-//   width: 316px; /* container height - (border thickness * 2) */
-//   height: 273.12px; /* container height - (border thickness * 2) */
-//   -webkit-clip-path: polygon(
-//     0% 50%,
-//     25% 0%,
-//     75% 0%,
-//     100% 50%,
-//     75% 100%,
-//     25% 100%
-//   );
-//   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-// `;
-
-const Connector = styled.div`
-  width: 50px;
-  border: 2px solid #ffff;
-  margin-top: -12.5rem;
+   @media (max-width: 1650px) {
+    width: 1500px;
+    // justify-content: space-between;
+  }
+  @media (max-width: 1590px) {
+    max-width: 1350px;
+    flex-wrap: wrap;
+  }
 `;
 
-// const ServicesContainer = styled.div`
-//   // border: 3px solid red;
-//   padding: 0.5rem;
-//   height: 111vh;
-//   width: 100%;
-// `;
+
+
+

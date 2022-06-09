@@ -53,7 +53,7 @@ const Nav = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    border: 3px solid rgba(12,121,190,255);
+    // border: 3px solid rgba(12,121,190,255);
     // position: fixed;
     // top: 1%;
   `;
