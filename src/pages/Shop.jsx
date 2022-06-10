@@ -13,55 +13,55 @@ export default function Shop() {
           <title>Moonbeam Trading Co. | Shop</title>
         </Helmet>
       </div>
-  
-        <ShopTitle>
-          SHOP
-          <h3>
-            Browse a collection of fair trade, sustainable items from our
-            partners.
-          </h3>
-        </ShopTitle>
-        <ShopBox>
-          <Image src={onlineshopping} />
-          <ShopOptions>
-            <ShopifyRow>
-              <ShopifyIcon src={shopify} />
-              <p>
-                <h3>
-                  <b>SHOPIFY</b>
-                </h3>
-                <i>Discover a wide variety of products</i>
-                <br></br>
-                <br></br>
-                <a href="https://moonbeam-trading-company.myshopify.com/">
-                  <Button variant="success">SHOP NOW</Button>
-                </a>
-              </p>
-            </ShopifyRow>
-            <br></br>
-            <AuctionRow>
-              <AuctionIcon src={auction} />
-              <p>
-                <h3>
-                  <b>AUCTION (COMING SOON)</b>
-                </h3>
-                <i>
-                  Stay tuned for more details. <br></br>
-                  <br></br>
-                </i>
-                <Button disabled variant="success">
-                  BID NOW
-                </Button>
-              </p>
-            </AuctionRow>
-          </ShopOptions>
-        </ShopBox>
-      </ShopContent>
 
+      <ShopTitle>
+        SHOP
+        <h3>
+          Browse a collection of fair trade, sustainable items from our
+          partners.
+        </h3>
+      </ShopTitle>
+      <ShopBox>
+        <Image src={onlineshopping} />
+        <ShopOptions>
+          <ShopifyRow>
+            <ShopifyIcon src={shopify} />
+            <p>
+              <h3>
+                <b>SHOPIFY</b>
+              </h3>
+              <i>Discover a wide variety of products</i>
+              <br></br>
+              <br></br>
+              <a href="https://moonbeam-trading-company.myshopify.com/">
+                <Button variant="success">SHOP NOW</Button>
+              </a>
+            </p>
+          </ShopifyRow>
+          <br></br>
+          <AuctionRow>
+            <AuctionIcon src={auction} />
+            <p>
+              <h3>
+                <b>AUCTION (COMING SOON)</b>
+              </h3>
+              <i>
+                Stay tuned for more details. <br></br>
+                <br></br>
+              </i>
+              <Button disabled variant="success">
+                BID NOW
+              </Button>
+            </p>
+          </AuctionRow>
+        </ShopOptions>
+      </ShopBox>
+    </ShopContent>
   );
 }
 
 const Image = styled.img`
+  // border: 3px solid hotpink;
   height: 350px;
   margin-right: 5rem;
   border-radius: 15px;
@@ -80,9 +80,8 @@ const Image = styled.img`
   }
 `;
 
-
 const ShopContent = styled.div`
-    // border: 3px solid yellow;
+  // border: 3px solid hotpink;
   // margin: 2rem 0;
   height: 90vh;
   padding: 1rem 0;
@@ -99,51 +98,49 @@ const ShopContent = styled.div`
 `;
 
 const ShopTitle = styled.div`
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
+  // border: 3px solid hotpink;
   margin-top: 2rem;
   width: 800px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  //  justify-content: center;
-  //  align-items: center;
   padding-top: 0.8rem;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
   h3 {
-    // margin-top: -0.1rem;
-    font-size: 17px;
     font-weight: normal;
     font-style: italic;
-      @media (max-width: 1180px) {
-   margin-top: -1rem;
-  }
-  
+    @media (max-width: 1180px) {
+      margin-top: -1rem;
+    }
+
     @media (max-width: 900px) {
       font-size: 22px;
       width: 500px;
       font-size: 16.5px;
-  }
+    }
 
-  @media (max-width: 550px) {
-    font-size: 22px;
-    width: 400px;
-    font-size: 16.5px;
-}
-@media (max-width: 430px) {
-  font-size: 18px;
-  width: 370px;
-  font-size: 16.5px;
-}
-     }
+    @media (max-width: 550px) {
+      font-size: 22px;
+      width: 400px;
+      font-size: 16.5px;
+    }
+    @media (max-width: 430px) {
+      font-size: 18px;
+      width: 100%;
+      font-size: 16.5px;
+    }
+  }
 `;
 
 const ShopBox = styled.div`
+  // border: 3px solid hotpink;
   height: 500px;
   width: 1300px;
   // background-color: rgba(37, 36, 37, 0.3);
@@ -152,8 +149,8 @@ const ShopBox = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 1180px) {
- flex-direction: column
-// margin-top: 1rem;
+    flex-direction: column;
+    // margin-top: 1rem;
   }
   // @media (max-width: 550px) {
   //   width:100%
@@ -161,7 +158,8 @@ const ShopBox = styled.div`
 `;
 
 const ShopOptions = styled.div`
-  width: 500px;
+  // border: 3px solid hotpink;
+  width: 600px;
   height: 400px;
   // background-color: rgba(37, 36, 37, 0.6);
   // border: 3px solid rgba(12, 121, 190, 255);
@@ -173,15 +171,18 @@ const ShopOptions = styled.div`
     height: 290px;
   }
   @media (max-width: 550px) {
-    margin-left: 8rem;
+    // margin-left: 8rem;
+    width: 500px;
   }
   @media (max-width: 430px) {
- margin-left: 13rem;
-          }
+    // margin-left: 13rem;
+    width: 430px;
+  }
 `;
 const ShopifyRow = styled.div`
+  // border: 3px solid hotpink;
   height: 180px;
-  width: 600px;
+  width: 100%;
   // border: 3px solid green;
   margin-top: 3rem;
   display: flex;
@@ -189,11 +190,13 @@ const ShopifyRow = styled.div`
   // flex-direction: column
   font-size: 16px;
   @media (max-width: 430px) {
-font-size: 15px;
-margin-left: 2rem;
+    font-size: 13px;
+    // margin-right: 2rem;;
+    // width: 90%;
+    // margin: 0;
   }
 
-  h3{
+  h3 {
     @media (max-width: 900px) {
       font-size: 22px;
     }
@@ -202,7 +205,7 @@ margin-left: 2rem;
     }
     @media (max-width: 430px) {
       font-size: 16px;
-            }
+    }
   }
 `;
 const ShopifyIcon = styled.img`
@@ -216,9 +219,9 @@ const ShopifyIcon = styled.img`
     margin-left: 4.5rem;
   }
   @media (max-width: 430px) {
-height: 60px;
-margin-right: 1rem;
-      }
+    height: 60px;
+    margin-right: 1rem;
+  }
 `;
 
 const AuctionIcon = styled.img`
@@ -231,17 +234,18 @@ const AuctionIcon = styled.img`
     height: 50px;
   }
   @media (max-width: 430px) {
-  height: 30px;
-  margin-right: 1.5rem;
-  @media (max-width: 430px) {
-    margin-top: -0.5rem;
-        }
-      }
+    height: 30px;
+    margin-right: 1.5rem;
+    @media (max-width: 430px) {
+      margin-top: -0.5rem;
+    }
+  }
 `;
 
 const AuctionRow = styled.div`
+  // border: 3px solid hotpink;
   height: 180px;
-  width: 600px;
+  width: 100%;
   // border: 3px solid green;
   // margin-right: 1rem;
   display: flex;
@@ -249,20 +253,20 @@ const AuctionRow = styled.div`
   // flex-direction: column
   font-size: 16px;
   @media (max-width: 430px) {
-    font-size: 15px;
-    margin-left: 2rem;
-      }
-  h3{
+    font-size: 13px;
+    // margin-left: 2rem;
+    width: 100%;
+  }
+  h3 {
     @media (max-width: 900px) {
       font-size: 22px;
     }
     @media (max-width: 550px) {
       font-size: 18px;
-
     }
     @media (max-width: 430px) {
-      margin-top: -0.5rem;
+      margin-top: -0.3rem;
       font-size: 16px;
-          }
+    }
   }
 `;
