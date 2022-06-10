@@ -81,9 +81,7 @@ export default function Services() {
 }
 
 const Image = styled.img`
-  // height: 300px;
   width: 100%;
-  // margin-left: -2.5rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
   @media (max-width: 1330px) {
@@ -92,25 +90,18 @@ const Image = styled.img`
 `;
 
 const ServicesContainer = styled.div`
-  // border: 3px solid red;
-  // padding: 0.5rem;
   height: 84.5vh;
   width: 100%;
   margin-top: 1rem;
-  //  margin: 0;
   margin-bottom: 20rem;
 `;
 
 const ServicesContent = styled.div`
-  // border: 3px solid yellow;
-  // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  // padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   background-color: white;
 
@@ -119,8 +110,6 @@ const ServicesContent = styled.div`
 `;
 
 const ServicesTitle = styled.div`
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
   margin-top: 5rem;
   width: 800px;
   height: 100px;
@@ -132,11 +121,8 @@ const ServicesTitle = styled.div`
   text-align: center;
  display: flex;
  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
 padding-top: 0.8rem;
   h3 {
-    // margin-top: -0.1rem;
     font-size: 17px;
     font-weight: normal;
     font-style: italic;
@@ -153,19 +139,15 @@ width: 500px;
 `;
 
 const ServicesBox = styled.div`
-  // border: 2px solid green;
-  // background-color: rgba(37, 36, 37, 0.3);
   height: 550px;
   width: 1700px;
   display: flex;
   flex-wrap: wrap;
-  // margin-top: 2rem;
   align-items: center;
   justify-content: space-around;
 `;
 
 const HexContainer = styled.div`
-// border: 4px solid hotpink;
   width: 350px;
   padding: 0 0.5rem;
   height: 500px;
@@ -181,11 +163,6 @@ const HexContainer = styled.div`
   @media (max-width: 1650px) {
     width: 300px;
   }
-  @media (max-width: 1330px) {
-    font-size: 15px;
-    // width: 320px;
-    // margin-right: -4rem;
-  }
 `;
 
 const Hexes = styled.div`
@@ -195,11 +172,9 @@ const Hexes = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  //  border: 3px solid blue;
 
    @media (max-width: 1650px) {
     width: 90%;
-    // justify-content: space-between;
   }
   @media (max-width: 1550px) {
     width: 700px;

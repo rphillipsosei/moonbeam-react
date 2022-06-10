@@ -61,11 +61,9 @@ export default function Shop() {
 }
 
 const Image = styled.img`
-  // border: 3px solid hotpink;
   height: 350px;
   margin-right: 5rem;
   border-radius: 15px;
-  // border: 3px solid rgba(12, 121, 190, 255);
 
   @media (max-width: 1180px) {
     height: 290px;
@@ -81,8 +79,6 @@ const Image = styled.img`
 `;
 
 const ShopContent = styled.div`
-  // border: 3px solid hotpink;
-  // margin: 2rem 0;
   height: 90vh;
   padding: 1rem 0;
   width: 100%;
@@ -91,14 +87,12 @@ const ShopContent = styled.div`
   justify-content: center;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  // background-color: rgba(12, 121, 190, 255);
   background-size: cover;
   color: #000000;
   flex-direction: column;
 `;
 
 const ShopTitle = styled.div`
-  // border: 3px solid hotpink;
   margin-top: 2rem;
   width: 800px;
   height: 100px;
@@ -140,29 +134,21 @@ const ShopTitle = styled.div`
 `;
 
 const ShopBox = styled.div`
-  // border: 3px solid hotpink;
   height: 500px;
   width: 1300px;
-  // background-color: rgba(37, 36, 37, 0.3);
   display: flex;
   margin-top: 5rem;
   align-items: center;
   justify-content: center;
   @media (max-width: 1180px) {
     flex-direction: column;
-    // margin-top: 1rem;
   }
-  // @media (max-width: 550px) {
-  //   width:100%
-  // }
+ 
 `;
 
 const ShopOptions = styled.div`
-  // border: 3px solid hotpink;
   width: 600px;
   height: 400px;
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,29 +157,20 @@ const ShopOptions = styled.div`
     height: 290px;
   }
   @media (max-width: 550px) {
-    // margin-left: 8rem;
     width: 500px;
   }
   @media (max-width: 430px) {
-    // margin-left: 13rem;
     width: 430px;
   }
 `;
 const ShopifyRow = styled.div`
-  // border: 3px solid hotpink;
   height: 180px;
   width: 100%;
-  // border: 3px solid green;
   margin-top: 3rem;
   display: flex;
-  //   align-items: center;
-  // flex-direction: column
   font-size: 16px;
   @media (max-width: 430px) {
     font-size: 13px;
-    // margin-right: 2rem;;
-    // width: 90%;
-    // margin: 0;
   }
 
   h3 {
@@ -210,7 +187,6 @@ const ShopifyRow = styled.div`
 `;
 const ShopifyIcon = styled.img`
   height: 120px;
-  // width: 100%;
   margin-left: 3.5rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
@@ -226,7 +202,6 @@ const ShopifyIcon = styled.img`
 
 const AuctionIcon = styled.img`
   height: 70px;
-  // width: 100%;
   margin-left: 7rem;
   margin-right: 3rem;
   margin-top: 1.8rem;
@@ -243,18 +218,12 @@ const AuctionIcon = styled.img`
 `;
 
 const AuctionRow = styled.div`
-  // border: 3px solid hotpink;
   height: 180px;
   width: 100%;
-  // border: 3px solid green;
-  // margin-right: 1rem;
   display: flex;
-  //   align-items: center;
-  // flex-direction: column
   font-size: 16px;
   @media (max-width: 430px) {
     font-size: 13px;
-    // margin-left: 2rem;
     width: 100%;
   }
   h3 {

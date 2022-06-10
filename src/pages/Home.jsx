@@ -26,13 +26,6 @@ export default function Home() {
           <h3>Services that create business, customer, and community value</h3>
         </HomeTitle>
       </HomeContent>
-    
-    {/* <Services/> */}
-    {/* <Shop/> */}
-    {/* <Careers/> */}
-    {/* <About/> */}
-    {/* <Contact/> */}
-    {/* <Apply/> */}
     </AppContainer>
 
   );
@@ -41,20 +34,13 @@ export default function Home() {
 
 
 const AppContainer = styled.div`
-// padding: 1rem;
 height: 90vh;
-// border: 3px solid green;
-// display: flex;
-// flex-direction: column;
 padding: 0.7rem;
 `
 
 
 
 const HomeContent = styled.div`
-
-  // border: 3px solid yellow;
-  // margin: 0.7rem 0;
   height: 100%;
   width: 100%;
   display: flex;
@@ -75,9 +61,7 @@ width: 1250px;
 display: flex;
 align-items: center;
 flex-direction: column;
-// align-items: center;
 justify-content: center;
-// border-radius: 15px;
 border: 2px solid #ffff;
   margin-top: 3rem;
   font-size: 70px;

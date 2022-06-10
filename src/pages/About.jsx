@@ -66,7 +66,7 @@ export default function About() {
                 We want to have a positive social impact wherever we do
                 business.
                 </Paragraph>
-              {/* </AboutSection> */}
+            
     
 </AboutBox>
     <LandAcknowledgement>
@@ -109,17 +109,14 @@ export default function About() {
 const AboutContent = styled.div`
   height: 100%;
   padding: 1rem 0;
-  // width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  // background-color: rgba(12, 121, 190, 255);
   background-size: cover;
   color: #000000;
   flex-direction: column;
-  // border: 4px solid hotpink;
 `;
 
 const AboutTitle = styled.div`
@@ -131,15 +128,12 @@ const AboutTitle = styled.div`
   margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
-  // border: 4px solid hotpink;
 `;
 
 const AboutBox = styled.div`
 margin-top: 3rem;
 font-size: 13px;
 width: 95%;
-// height: 370px;
-// border: 3px solid hotpink;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -160,10 +154,8 @@ text-align: justify;
 @media (max-width: 860px) {
 width: 90%;
 margin-top: -2rem;
-// border: 4px solid hotpink;
 h3 {
   font-size: 18px;
-  // margin-bottom: -1rem
 }
 }
 `
@@ -171,13 +163,9 @@ const LandAcknowledgement = styled.div`
 margin-top: 3rem;
 width: 95%;
 border: 3px solid #000000;
-// padding: 1rem 3rem;
 font-size: 10px;
 text-align: center;
 padding: 0 1rem;
-// @media (max-width: 1715px) {
-//   width: 1500px;
-// }
 `
 const LandBack = styled.div`
 font-style: italic;

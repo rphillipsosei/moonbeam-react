@@ -59,7 +59,6 @@ export default function Careers() {
 }
 
 const Image = styled.img`
-  // border: 4px solid green;
   border-radius: 15px;
   height: 250px;
   margin-bottom: 1rem;
@@ -76,8 +75,6 @@ const Image = styled.img`
 `;
 
 const CareersContent = styled.div`
-  // border: 3px solid yellow;
-  // margin: 2rem 0;
   height: 90vh;
   padding: 1rem 0;
   width: 100%;
@@ -86,29 +83,21 @@ const CareersContent = styled.div`
   justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  // background-color: rgba(12, 121, 190, 255);
-  // background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  // color: #ffff;
   flex-direction: column;
 `;
 
 const CareersTitle = styled.div`
   margin-bottom: 1.5rem;
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
   margin-top: 1rem;
   width: 800px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  //  justify-content: center;
-  //  align-items: center;
   padding-top: 0.8rem;
   h3 {
     margin-top: -0.1rem;
@@ -120,7 +109,6 @@ const CareersTitle = styled.div`
 
 const CareersBox = styled.div`
   text-align: center;
-  // border: 3px solid hotpink;
   height: 400px;
   width: 500px;
   display: flex;
@@ -134,13 +122,11 @@ const CareersBox = styled.div`
   h3 {
     @media (max-width: 530px) {
       font-size: 17px;
-      // margin-bottom: -1rem;
       width: 360px;
     }
   }
   h6 {
     font-size: 14px;
-    //  border: 3px solid orange;
     text-align: center;
     width: 350px;
   }

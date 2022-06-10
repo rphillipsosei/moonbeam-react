@@ -120,17 +120,13 @@ export default function Contact() {
 }
 
 const ContactContainer = styled.div`
-  // border: 3px solid red;
   height: 84.5vh;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 20rem;
-  // border: 3px solid green;
 `;
 
 const ContactContent = styled.div`
-  // border: 3px solid yellow;
-  // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
   width: 100%;
@@ -139,28 +135,21 @@ const ContactContent = styled.div`
   justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
-  //   background-color: rgba(12, 121, 190, 255);
-  //   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   color: #000000;
   flex-direction: column;
 `;
 
 const ContactTitle = styled.div`
-  // background-color: rgba(37, 36, 37, 0.6);
-  // border: 3px solid rgba(12, 121, 190, 255);
   margin-top: 5rem;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  //  justify-content: center;
-  //  align-items: center;
   padding-top: 0.8rem;
   h3 {
     width: 80%;
@@ -172,14 +161,11 @@ const ContactTitle = styled.div`
 `;
 
 const ContactBox = styled.div`
-//   border: 3px solid hotpink;
   height: 500px;
   width: 80%;
   margin-top: 3rem;
   display: flex;
   // flex-wrap: wrap;
-  // margin-top: 2rem;
-  align-items: center;
   justify-content: center;
 `;
 
