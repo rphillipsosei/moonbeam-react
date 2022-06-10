@@ -5,17 +5,17 @@ import {Helmet} from 'react-helmet'
 export default function About() {
   return (
    
-    <AboutContainer id="shop">
+   <AboutContent id="shop">
        <div>
     <Helmet>
       <title>Moonbeam Trading Co. | Careers</title>
     </Helmet>
   </div>
-      <AboutContent id="shop">
+    
         <AboutTitle>ABOUT US</AboutTitle>
         {/* <Image src={growth}/> */}
 <AboutBox>
-    <AboutSection>
+    {/* <AboutSection> */}
       <Paragraph>
     <h3 align="center">OUR BACKGROUND</h3> <br></br>
                 The year 2018 to Q1 2020 brought early success and a foundation for
@@ -32,7 +32,6 @@ export default function About() {
                 <br></br>
                 <br></br>We aim to inspire the world by showing this is
                 possible.
-                <br></br>
                 <br></br>
                 <br></br>
                 </Paragraph>
@@ -69,7 +68,7 @@ export default function About() {
                 We want to have a positive social impact wherever we do
                 business.
                 </Paragraph>
-              </AboutSection>
+              {/* </AboutSection> */}
     
 </AboutBox>
     <LandAcknowledgement>
@@ -104,31 +103,16 @@ export default function About() {
                </LandBack>
     </LandAcknowledgement>
       </AboutContent>
-    </AboutContainer>
   );
 }
 
 
-const AboutContainer = styled.div`
-  // border: 3px solid red;
-  // padding: 0.5rem;
-  height: 84.5vh;
-  width: 100%;
-  margin-top: 1rem;
-  //  margin: 0;
-  margin-bottom: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
-const Image = styled.img`
-height: 200px;
-`
+// const Image = styled.img`
+// height: 200px;
+// `
 
 const AboutContent = styled.div`
-  // border: 3px solid yellow;
-  // margin: 2rem 0;
   height: 100%;
   padding: 1rem 0;
   width: 100%;
@@ -144,8 +128,6 @@ const AboutContent = styled.div`
 `;
 
 const AboutTitle = styled.div`
-// background-color: rgba(37, 36, 37, 0.6);
-
   width: 450px;
   height: 70px;
   display: flex;
@@ -158,33 +140,36 @@ const AboutTitle = styled.div`
 `;
 
 const AboutBox = styled.div`
-margin-top: 10rem;
-
-width: 1700px;
-height: 370px;
+margin-top: 3rem;
+font-size: 13px;
+width: 95%;
+// height: 370px;
 // border: 3px solid hotpink;
 display: flex;
 flex-direction: row;
 justify-content: center;
-
+@media (max-width: 860px) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 `
 
-const AboutSection = styled.div`
-width: 95%;
-// height: 600px;
-border: 3px solid #ffff;
-display: flex;
-text-align: center;
-// border: 3px solid green;
-// background-color: rgba(37, 36, 37, 0.6);
-
-`
 
 const Paragraph = styled.p`
+line-height: 16px;
 width: 30%;
 margin-right: 3rem;
 margin-left: 3rem;
 text-align: justify;
+@media (max-width: 860px) {
+width: 90%;
+margin-top: -2rem;
+h3 {
+  font-size: 18px;
+  margin-bottom: -1rem
+}
+}
 `
 const LandAcknowledgement = styled.div`
 margin-top: 3rem;
@@ -194,9 +179,17 @@ border: 3px solid #000000;
 font-size: 10px;
 text-align: center;
 padding: 0 1rem;
+position: fixed;
+bottom: 0;
+// @media (max-width: 1715px) {
+//   width: 1500px;
+// }
 `
 const LandBack = styled.div`
 font-style: italic;
+max-height: 200px;
+overflow: scroll;
+
 h3 {
   font-size: 18px;
 }
