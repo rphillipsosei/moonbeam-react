@@ -71,7 +71,7 @@ export default function Services() {
               experiences. Our sales and digital marketing team working
               alongside our partners in e-commerce and drop shipping, enhance
               your shopping experience while growing our international
-              -ecommerce expansion.
+              e-commerce expansion.
             </HexContainer>
           </Hexes>
         </ServicesBox>
@@ -86,6 +86,9 @@ const Image = styled.img`
   // margin-left: -2.5rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
+  @media (max-width: 1330px) {
+  width: 90%;
+  }
 `;
 
 const ServicesContainer = styled.div`
@@ -137,6 +140,15 @@ padding-top: 0.8rem;
     font-size: 17px;
     font-weight: normal;
     font-style: italic;
+
+    @media (max-width: 780px) {
+width: 500px;
+    }
+  
+    @media (max-width: 440px) {
+      width: 320px;
+      font-size: 16.5px;
+          }
   }
 `;
 
@@ -153,6 +165,7 @@ const ServicesBox = styled.div`
 `;
 
 const HexContainer = styled.div`
+// border: 4px solid hotpink;
   width: 350px;
   padding: 0 0.5rem;
   height: 500px;
@@ -168,10 +181,10 @@ const HexContainer = styled.div`
   @media (max-width: 1650px) {
     width: 300px;
   }
-  @media (max-width: 1320px) {
+  @media (max-width: 1330px) {
     font-size: 15px;
     // width: 320px;
-
+    // margin-right: -4rem;
   }
 `;
 
@@ -182,14 +195,19 @@ const Hexes = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-   border: 3px solid blue;
+  //  border: 3px solid blue;
 
    @media (max-width: 1650px) {
-    width: 1500px;
+    width: 90%;
     // justify-content: space-between;
   }
-  @media (max-width: 1590px) {
-    max-width: 1350px;
+  @media (max-width: 1550px) {
+    width: 700px;
+    flex-wrap: wrap;
+  }
+ 
+  @media (max-width: 630px) {
+    width: 300px;
     flex-wrap: wrap;
   }
 `;

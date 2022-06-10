@@ -34,7 +34,7 @@ export default function Shop() {
               <br></br>
               <br></br>
               <a href="https://moonbeam-trading-company.myshopify.com/">
-                <Button variant="success">SHOP NOW</Button>
+                <Button variant="success">Shop now</Button>
               </a>
             </p>
           </ShopifyRow>
@@ -50,7 +50,7 @@ export default function Shop() {
                 <br></br>
               </i>
               <Button disabled variant="success">
-                BID NOW
+                Bid now
               </Button>
             </p>
           </AuctionRow>
