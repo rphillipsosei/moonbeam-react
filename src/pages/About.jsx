@@ -179,8 +179,6 @@ border: 3px solid #000000;
 font-size: 10px;
 text-align: center;
 padding: 0 1rem;
-position: fixed;
-bottom: 0;
 // @media (max-width: 1715px) {
 //   width: 1500px;
 // }
