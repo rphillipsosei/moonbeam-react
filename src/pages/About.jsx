@@ -115,7 +115,7 @@ export default function About() {
 const AboutContent = styled.div`
   height: 100%;
   padding: 1rem 0;
-  width: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -167,7 +167,7 @@ width: 90%;
 margin-top: -2rem;
 h3 {
   font-size: 18px;
-  margin-bottom: -1rem
+  // margin-bottom: -1rem
 }
 }
 `
@@ -185,9 +185,12 @@ padding: 0 1rem;
 `
 const LandBack = styled.div`
 font-style: italic;
-max-height: 200px;
-overflow: scroll;
 
+@media (max-width: 800px) {
+  max-height: 200px;
+overflow: scroll;
+overflow-x: hidden;
+}
 h3 {
   font-size: 18px;
 }
