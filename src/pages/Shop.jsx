@@ -75,13 +75,14 @@ const Image = styled.img`
     height: 250px;
   }
   @media (max-width: 430px) {
-    height: 200px;
+    height: 180px;
+    margin-top: -3rem;
   }
 `;
 
 
 const ShopContent = styled.div`
-    border: 3px solid yellow;
+    // border: 3px solid yellow;
   // margin: 2rem 0;
   height: 90vh;
   padding: 1rem 0;
@@ -199,6 +200,9 @@ margin-left: 2rem;
     @media (max-width: 550px) {
       font-size: 18px;
     }
+    @media (max-width: 430px) {
+      font-size: 16px;
+            }
   }
 `;
 const ShopifyIcon = styled.img`
@@ -229,6 +233,9 @@ const AuctionIcon = styled.img`
   @media (max-width: 430px) {
   height: 30px;
   margin-right: 1.5rem;
+  @media (max-width: 430px) {
+    margin-top: -0.5rem;
+        }
       }
 `;
 
@@ -251,6 +258,11 @@ const AuctionRow = styled.div`
     }
     @media (max-width: 550px) {
       font-size: 18px;
+
     }
+    @media (max-width: 430px) {
+      margin-top: -0.5rem;
+      font-size: 16px;
+          }
   }
 `;
