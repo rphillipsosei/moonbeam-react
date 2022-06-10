@@ -24,19 +24,19 @@ export default function Navigation() {
       <Menu isOpen={isOpen}>
       
       <NavLink to="/services" activeClassName="current" exact>
-        <MenuLinks>SERVICES</MenuLinks>
+        <MenuLinks onClick={() => setIsOpen(!isOpen)}>SERVICES</MenuLinks>
       </NavLink>
       <NavLink to="/shop" activeClassName="current" exact>
-        <MenuLinks>SHOP</MenuLinks>
+        <MenuLinks onClick={() => setIsOpen(!isOpen)}>SHOP</MenuLinks>
       </NavLink>
       <NavLink to="/careers" activeClassName="current" exact>
-        <MenuLinks>CAREERS</MenuLinks>
+        <MenuLinks onClick={() => setIsOpen(!isOpen)}>CAREERS</MenuLinks>
       </NavLink>
       <NavLink to="/about" activeClassName="current" exact>
-        <MenuLinks>ABOUT</MenuLinks>
+        <MenuLinks onClick={() => setIsOpen(!isOpen)}>ABOUT</MenuLinks>
       </NavLink>
       <NavLink to="/contact" activeClassName="current" exact>
-        <MenuLinks>CONTACT</MenuLinks>
+        <MenuLinks onClick={() => setIsOpen(!isOpen)}>CONTACT</MenuLinks>
       </NavLink>
       </Menu>
     </Nav>
@@ -66,6 +66,10 @@ const Nav = styled.div`
     text-decoration: none;
     margin-bottom: 0.7rem;
     cursor: pointer
+    @media (max-width: 900px) {
+     height: 50px;
+     width: 50px;
+          }
     `;
 
 
@@ -84,6 +88,7 @@ const Nav = styled.div`
   }
   @media (max-width: 768px) {
     display: flex;
+    margin-right: 2rem;
   }
 `;
 
