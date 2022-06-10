@@ -121,9 +121,9 @@ const ShopTitle = styled.div`
     }
 
     @media (max-width: 900px) {
-      font-size: 22px;
+
       width: 500px;
-      font-size: 16.5px;
+      font-size: 20px;
     }
 
     @media (max-width: 550px) {

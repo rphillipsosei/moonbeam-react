@@ -127,12 +127,14 @@ const CareersBox = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
  
   h3 {
     @media (max-width: 530px) {
       font-size: 17px;
-      margin-bottom: -1rem;
+      // margin-bottom: -1rem;
       width: 360px;
     }
   }
