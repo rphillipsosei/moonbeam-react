@@ -13,9 +13,7 @@ export default function About() {
   </div>
     
         <AboutTitle>ABOUT US</AboutTitle>
-        {/* <Image src={growth}/> */}
 <AboutBox>
-    {/* <AboutSection> */}
       <Paragraph>
     <h3 align="center">OUR BACKGROUND</h3> <br></br>
                 The year 2018 to Q1 2020 brought early success and a foundation for
@@ -46,7 +44,7 @@ export default function About() {
                   acquire $10M company <br></br>- New import suppliers - South
                   America<br></br>- Staffing expansion plan<br></br>- New
                   location warehouse expansion <br></br>- eCommerce partnership
-                  <br></br>- technology partnership<br></br>
+                  <br></br>- technology partnership<br></br><br></br>
 </Paragraph>
     <Paragraph> <h3 align="center">OUR VALUES</h3> <br></br>
               

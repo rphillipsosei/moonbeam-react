@@ -149,7 +149,7 @@ const ContactTitle = styled.div`
   // background-color: rgba(37, 36, 37, 0.6);
   // border: 3px solid rgba(12, 121, 190, 255);
   margin-top: 5rem;
-  width: 800px;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -163,10 +163,11 @@ const ContactTitle = styled.div`
   //  align-items: center;
   padding-top: 0.8rem;
   h3 {
-    // margin-top: -0.1rem;
+    width: 80%;
     font-size: 17px;
     font-weight: normal;
     font-style: italic;
+ 
   }
 `;
 
