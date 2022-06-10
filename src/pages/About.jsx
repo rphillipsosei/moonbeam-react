@@ -108,10 +108,6 @@ export default function About() {
 
 
 
-// const Image = styled.img`
-// height: 200px;
-// `
-
 const AboutContent = styled.div`
   height: 100%;
   padding: 1rem 0;
@@ -125,10 +121,11 @@ const AboutContent = styled.div`
   background-size: cover;
   color: #000000;
   flex-direction: column;
+  // border: 4px solid hotpink;
 `;
 
 const AboutTitle = styled.div`
-  width: 450px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -136,7 +133,7 @@ const AboutTitle = styled.div`
   margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
-  border: 3px solid white;
+  // border: 4px solid hotpink;
 `;
 
 const AboutBox = styled.div`
@@ -165,6 +162,7 @@ text-align: justify;
 @media (max-width: 860px) {
 width: 90%;
 margin-top: -2rem;
+// border: 4px solid hotpink;
 h3 {
   font-size: 18px;
   // margin-bottom: -1rem
