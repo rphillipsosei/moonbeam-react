@@ -16,10 +16,6 @@ export default function About() {
 <AboutBox>
       <Paragraph>
     <h3 align="center">OUR BACKGROUND</h3> <br></br>
-                The year 2018 to Q1 2020 brought early success and a foundation for
-                growth.
-                <br></br>
-                <br></br>
                 Moonbeam Trading Company was founded in 2018 by former tech
                 sector executive Mark McDonald
                 <br></br>
@@ -33,20 +29,7 @@ export default function About() {
                 <br></br>
                 <br></br>
                 </Paragraph>
-                <Paragraph>
-                <h3 align="center">EARLY SUCCESS</h3>
-                <br></br>
-                2018 to Q1 2020 brought early success and a foundation for
-                growth; 
-                <br></br>
-                <br></br>
-                - Google / Sidewalk Labs project<br></br>- Letter of intent to
-                  acquire $10M company <br></br>- New import suppliers - South
-                  America<br></br>- Staffing expansion plan<br></br>- New
-                  location warehouse expansion <br></br>- eCommerce partnership
-                  <br></br>- technology partnership<br></br><br></br>
-</Paragraph>
-    <Paragraph> <h3 align="center">OUR VALUES</h3> <br></br>
+                <Paragraph> <h3 align="center">OUR VALUES</h3> <br></br>
               
               
              
@@ -65,7 +48,22 @@ export default function About() {
                 <br></br>
                 We want to have a positive social impact wherever we do
                 business.
+                <br></br><br></br>
                 </Paragraph>
+                <Paragraph>
+                <h3 align="center">EARLY SUCCESS</h3>
+                <br></br>
+                2018 to Q1 2020 brought early success and a foundation for
+                growth; 
+                <br></br>
+                <br></br>
+                - Google / Sidewalk Labs project<br></br>- Letter of intent to
+                  acquire $10M company <br></br>- New import suppliers - South
+                  America<br></br>- Staffing expansion plan<br></br>- New
+                  location warehouse expansion <br></br>- eCommerce partnership
+                  <br></br>- technology partnership<br></br><br></br>
+</Paragraph>
+    
             
     
 </AboutBox>
