@@ -1,5 +1,6 @@
 {
   "name": "moonbeam-react",
+  "homepage":"https://moonbeamtrading.ca/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
