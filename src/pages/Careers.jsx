@@ -3,11 +3,26 @@ import styled from "styled-components";
 import diversity from "../assets/brickwall.jpg";
 import { Button } from "react-bootstrap";
 import jobApp from "../assets/jobApp.pdf";
-
+import {motion} from "framer-motion"
 import { Helmet } from "react-helmet";
 
 export default function Careers() {
   return (
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+        },
+      },
+    }}
+  >
     <CareersContent>
       <div>
         <Helmet>
@@ -55,6 +70,7 @@ export default function Careers() {
         </h6>
       </CareersBox>
     </CareersContent>
+    </motion.div>
   );
 }
 
@@ -76,11 +92,10 @@ const Image = styled.img`
 
 const CareersContent = styled.div`
   height: 90vh;
-  padding: 1rem 0;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   flex-direction: column;

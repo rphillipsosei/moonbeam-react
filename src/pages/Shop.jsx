@@ -5,8 +5,26 @@ import auction from "../assets/auction2.png";
 import shopify from "../assets/shopify.png";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import {motion} from "framer-motion";
+
+
 export default function Shop() {
   return (
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+        },
+      },
+    }}
+  >
     <ShopContent>
       <div>
         <Helmet>
@@ -57,6 +75,7 @@ export default function Shop() {
         </ShopOptions>
       </ShopBox>
     </ShopContent>
+  </motion.div>
   );
 }
 
@@ -80,12 +99,12 @@ const Image = styled.img`
 
 const ShopContent = styled.div`
   height: 90vh;
-  padding: 1rem 0;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
+  // justify-content: center;
+  // padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   background-size: cover;
   color: #000000;
@@ -93,23 +112,26 @@ const ShopContent = styled.div`
 `;
 
 const ShopTitle = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 800px;
   height: 100px;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
   align-items: center;
   font-size: 50px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-top: 0.8rem;
+  // padding-top: 0.8rem;
   @media (max-width: 480px) {
     width: 100%;
   }
   h3 {
     font-weight: normal;
     font-style: italic;
+    font-size: 17px;
+    margin-top: 0rem;
     @media (max-width: 1180px) {
       margin-top: -1rem;
     }
@@ -137,7 +159,7 @@ const ShopBox = styled.div`
   height: 500px;
   width: 1300px;
   display: flex;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   align-items: center;
   justify-content: center;
   @media (max-width: 1180px) {

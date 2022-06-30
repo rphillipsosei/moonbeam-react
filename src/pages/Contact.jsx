@@ -5,6 +5,8 @@ import { faCheck, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import classes from "./Contact.Module.css";
 import { Form, Button } from "react-bootstrap";
 import {Helmet} from 'react-helmet'
+import { motion } from "framer-motion";
+
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -47,6 +49,21 @@ export default function Contact() {
   };
 
   return (
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+        },
+      },
+    }}
+    >
     <ContactContainer>
          <div>
     <Helmet>
@@ -112,27 +129,28 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faCheck} />
               </div>
             )}
-          </Form>
+             </Form>
         </ContactBox>
       </ContactContent>
     </ContactContainer>
+    </motion.div>
   );
+
 }
 
 const ContactContainer = styled.div`
   height: 84.5vh;
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 20rem;
+  margin-top: 5rem 0;
+  // margin-bottom: 20rem;
 `;
 
 const ContactContent = styled.div`
   height: 100%;
-  padding: 1rem 0;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   color: #000000;
@@ -140,23 +158,22 @@ const ContactContent = styled.div`
 `;
 
 const ContactTitle = styled.div`
-  margin-top: 5rem;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 0.8rem;
-  h3 {
-    width: 80%;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: italic;
- 
+width: 100%;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 8rem;
+font-size: 50px;
+text-align: center;
+flex-direction: column;
+h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 17px;
+  margin-top: 0rem;
+  @media (max-width: 1180px) {
+    margin-top: -1rem;
   }
 `;
 

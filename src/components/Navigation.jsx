@@ -13,7 +13,7 @@ export default function Navigation() {
     <Nav>
       <NavLink to="/">
       <Logo>
-        <img src={logo} height={80} width={80} />
+        <img src={logo} height={70} width={70} />
       </Logo>
       </NavLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -105,7 +105,7 @@ const Nav = styled.div`
       max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
       transition: max-height 0.3s ease-in;
       width: 100%;
-      // border: 3px solid orange;
+      border: 2px solid rgba(12,121,190,255);
       background-color: #ffff;
     }
     `;
@@ -118,7 +118,7 @@ const Nav = styled.div`
   padding: 1rem; 2rem;
   cursor: pointer;
   text-align: center;
-  color: rgba(12,121,190,255);
+  color: #000000;
 transition: all 0.3s ease-in;
 list-style: none;
 &:hover {

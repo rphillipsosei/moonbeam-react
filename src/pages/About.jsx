@@ -1,10 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import {Helmet} from 'react-helmet'
+import work from '../assets/work.webp';
+import growth from '../assets/growth.webp';
+import diversity from '../assets/diversity.webp';
+import { motion } from "framer-motion";
+
+
+
 
 export default function About() {
   return (
-   
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+        },
+      },
+    }}
+  >
    <AboutContent id="shop">
        <div>
     <Helmet>
@@ -12,10 +33,15 @@ export default function About() {
     </Helmet>
   </div>
     
-        <AboutTitle>ABOUT US</AboutTitle>
+        <AboutTitle>ABOUT US
+          <h3>
+          Our story. Our values. Our successes.
+          </h3>
+        </AboutTitle>
 <AboutBox>
       <Paragraph>
-    <h3 align="center">OUR BACKGROUND</h3> <br></br>
+    <h3 align="center"><b>OUR BACKGROUND</b></h3> <br></br>
+    <Image alt="Our Background" src={work}></Image>
                 Moonbeam Trading Company was founded in 2018 by former tech
                 sector executive Mark McDonald
                 <br></br>
@@ -29,9 +55,8 @@ export default function About() {
                 <br></br>
                 <br></br>
                 </Paragraph>
-                <Paragraph> <h3 align="center">OUR VALUES</h3> <br></br>
-              
-              
+                <Paragraph> <h3 align="center"><b>OUR VALUES</b></h3> <br></br>
+                <Image alt="Our Values" src={diversity}></Image>              
              
                 We strive to provide world-class business and technology
                 services in Canada, with the help of our valued employees and
@@ -51,8 +76,9 @@ export default function About() {
                 <br></br><br></br>
                 </Paragraph>
                 <Paragraph>
-                <h3 align="center">EARLY SUCCESS</h3>
+                <h3 align="center"><b>EARLY SUCCESS</b></h3>
                 <br></br>
+                <Image alt="Early Successes" src={growth}></Image>
                 2018 to Q1 2020 brought early success and a foundation for
                 growth; 
                 <br></br>
@@ -62,6 +88,7 @@ export default function About() {
                   America<br></br>- Staffing expansion plan<br></br>- New
                   location warehouse expansion <br></br>- eCommerce partnership
                   <br></br>- technology partnership<br></br><br></br>
+
 </Paragraph>
     
             
@@ -99,17 +126,22 @@ export default function About() {
                </LandBack>
     </LandAcknowledgement>
       </AboutContent>
+      </motion.div>
   );
 }
 
 
+const Image = styled.img`
+width: 400px;
+margin-bottom: 3rem;
+border-radius: 15px;
+`
 
 const AboutContent = styled.div`
   height: 100%;
-  padding: 1rem 0;
+  padding: 5rem 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   padding-top: 2rem;
   font-family: "Comfortaa", sans-serif;
   background-size: cover;
@@ -126,6 +158,15 @@ const AboutTitle = styled.div`
   margin-bottom: 1rem;
   font-size: 50px;
   text-align: center;
+  flex-direction: column;
+  h3 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 17px;
+    margin-top: 0rem;
+    @media (max-width: 1180px) {
+      margin-top: -1rem;
+    }
 `;
 
 const AboutBox = styled.div`
@@ -148,10 +189,14 @@ line-height: 16px;
 width: 30%;
 margin-right: 3rem;
 margin-left: 3rem;
-text-align: justify;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 @media (max-width: 860px) {
 width: 90%;
 margin-top: -2rem;
+margin-bottom: 6rem;
 h3 {
   font-size: 18px;
 }

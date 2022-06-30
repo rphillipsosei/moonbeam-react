@@ -3,17 +3,32 @@ import styled from "styled-components";
 import React from 'react'
 import homebg from "../assets/bigdata.jpg"
 import {Helmet} from 'react-helmet'
+import {motion} from "framer-motion";
 
 export default function Home() {
   return (
     
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={{
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          delay: 0.5,
+        },
+      },
+    }}
+  >
 <AppContainer>
 
-    <div>
       <Helmet>
         <title>Moonbeam Trading Co. | Home</title>
       </Helmet>
-      </div>
+ 
     
       <head>
         <title>Moonbeam Trading Co.</title>
@@ -27,7 +42,7 @@ export default function Home() {
         </HomeTitle>
       </HomeContent>
     </AppContainer>
-
+      </motion.div>
   );
 }
 
@@ -35,7 +50,7 @@ export default function Home() {
 
 const AppContainer = styled.div`
 height: 90vh;
-padding: 0.7rem;
+// padding: 0.7rem;
 `
 
 
@@ -64,7 +79,7 @@ flex-direction: column;
 justify-content: center;
 border: 2px solid #ffff;
   margin-top: 3rem;
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   h3 {
     font-size: 20px;
