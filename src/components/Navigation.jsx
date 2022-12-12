@@ -45,16 +45,12 @@ export default function Navigation() {
 const Nav = styled.div`
 
     color: #000000;
-    // width: 100%;
     height: 100px;
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    // border: 3px solid rgba(12,121,190,255);
-    // position: fixed;
-    // top: 1%;
     padding-right: 4rem;
   `;
 
@@ -82,7 +78,6 @@ const Nav = styled.div`
 
   const Menu = styled.div`
   margin-top: 2rem;
-  // margin-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
