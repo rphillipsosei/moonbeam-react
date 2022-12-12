@@ -108,7 +108,7 @@ const ServicesContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  font-family: "Comfortaa", sans-serif;
+  // font-family: "Sen", sans-serif;
   background-color: white;
   color: #000000;
   flex-direction: column;
@@ -169,7 +169,7 @@ const HexContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #000000;
-  font-family: "Comfortaa", sans-serif;
+  // font-family: 'Sen", sans-serif;
   flex-direction: column;
   font-size: 16px;
   cursor: pointer;

@@ -4,6 +4,7 @@ import React from 'react'
 import homebg from "../assets/bigdata.jpg"
 import {Helmet} from 'react-helmet'
 import {motion} from "framer-motion";
+import Banner from "../assets/moonbeam-banner.jpg"
 
 export default function Home() {
   return (
@@ -36,17 +37,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <HomeContent>
-        <HomeTitle>
-          Moonbeam Trading Company
+        <MoonbeamBanner alt="Moonbeam Trading Company" src={Banner}>
+        </MoonbeamBanner>
+        {/* <HomeTitle>
+          moonbeam <br></br>trading<br></br> company
           <h3>Services that create business, customer, and community value</h3>
-        </HomeTitle>
+        </HomeTitle> */}
       </HomeContent>
     </AppContainer>
       </motion.div>
   );
 }
 
+const MoonbeamBanner = styled.img`
 
+`
 
 const AppContainer = styled.div`
 height: 90vh;
@@ -62,15 +67,16 @@ const HomeContent = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-  font-family: "Comfortaa", sans-serif;
-  background-image: url(${homebg});
+  // font-family: "Sen", sans-serif;
+  // background-image: url(${homebg});
   background-size: cover;
   color: #ffff;
   flex-direction: column;
 `;
 
 const HomeTitle = styled.div`
-background-color: rgba(37, 36, 37, 0.8);
+// background-color: rgba(37, 36, 37, 0.8);
+color: #000000;
 height: 200px;
 width: 1250px;
 display: flex;

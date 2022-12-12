@@ -1,20 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
 import React from "react";
-import logo from "../assets/moonbeam-logo.png"
+import logo from "../assets/moonbeam-logo.jpg"
 import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
-  const [showHome, setShowHome] = useState(true)
+
   const [isOpen, setIsOpen] = useState(false);
 
 
   return (
     <Nav>
       <NavLink to="/">
-      <Logo>
+     {/* <Logo>
         <img src={logo} height={70} width={70} />
-      </Logo>
+      </Logo>  */}
       </NavLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -111,8 +111,7 @@ const Nav = styled.div`
     `;
 
   const MenuLinks = styled.li`
-  text-decoration: none;
-  font-family: Comfortaa;
+  font-family: Sen;
   font-size: 16px;
   font-weight: bold;
   padding: 1rem; 2rem;
@@ -124,6 +123,8 @@ list-style: none;
 &:hover {
   color: #000000;
   text-decoration: none;
+
+
 }
 
 

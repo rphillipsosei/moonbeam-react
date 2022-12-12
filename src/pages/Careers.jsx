@@ -97,7 +97,7 @@ const CareersContent = styled.div`
   display: flex;
   align-items: center;
   padding-top: 2rem;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Sen", sans-serif;
   flex-direction: column;
 `;
 

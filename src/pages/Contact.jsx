@@ -152,7 +152,7 @@ const ContactContent = styled.div`
   display: flex;
   align-items: center;
   padding-top: 2rem;
-  font-family: "Comfortaa", sans-serif;
+  // font-family: "Sen", sans-serif;
   color: #000000;
   flex-direction: column;
 `;

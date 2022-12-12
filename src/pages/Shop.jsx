@@ -105,7 +105,7 @@ const ShopContent = styled.div`
   align-items: center;
   // justify-content: center;
   // padding-top: 2rem;
-  font-family: "Comfortaa", sans-serif;
+  // font-family: "Sen", sans-serif;
   background-size: cover;
   color: #000000;
   flex-direction: column;

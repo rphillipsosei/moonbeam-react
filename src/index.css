@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat+Alternates:wght@300&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&family=Montserrat+Alternates:wght@300&family=Nunito&display=swap');
 
 html,
 body {
   /* padding: 1rem; */
   margin: 0;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Sen", sans-serif;
   
 }
 
@@ -22,5 +22,5 @@ b {
 }
 
 code {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Sen", sans-serif;
 }
