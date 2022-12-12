@@ -6,6 +6,8 @@ import classes from "./Contact.Module.css";
 import { Form, Button } from "react-bootstrap";
 import {Helmet} from 'react-helmet'
 import { motion } from "framer-motion";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { NavLink } from "react-router-dom";
 
 
 export default function Contact() {
@@ -64,6 +66,12 @@ export default function Contact() {
       },
     }}
     >
+          <NavLink to="/">
+    <Home  exact>
+
+    <BsFillArrowLeftCircleFill/><h1> BACK TO HOME </h1>
+    </Home>
+    </NavLink>
     <ContactContainer>
          <div>
     <Helmet>
@@ -93,7 +101,7 @@ export default function Contact() {
               className="mb-3"
               controlId="formBasicEmail"
             >
-              <Form.Label style={formLabel}>Email address</Form.Label>
+              <Form.Label style={formLabel}>Email Address</Form.Label>
               <Form.Control
                 type="email"
                 id="email"
@@ -138,11 +146,30 @@ export default function Contact() {
 
 }
 
+
+const Home = styled.div`
+font-family: "Expletus Sans", sans-serif;
+margin-left: 3rem;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 20px;
+h1 {
+  font-size: 18px;
+  margin-left: 1rem;
+}
+& :hover {
+text-decoration: underline;
+}
+`
+
+
 const ContactContainer = styled.div`
+font-family: "Expletus Sans", sans-serif;
   height: 84.5vh;
   width: 100%;
   margin-top: 5rem 0;
-  // margin-bottom: 20rem;
 `;
 
 const ContactContent = styled.div`
@@ -188,7 +215,7 @@ const ContactBox = styled.div`
 
 const formLabel = {
   fontSize: "20px",
-  textAlign: "center",
+
 };
 const form = {
   width: "600px",

@@ -5,7 +5,8 @@ import work from '../assets/work.webp';
 import growth from '../assets/growth.webp';
 import diversity from '../assets/diversity.webp';
 import { motion } from "framer-motion";
-
+import { BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { NavLink } from "react-router-dom";
 
 
 
@@ -26,6 +27,12 @@ export default function About() {
       },
     }}
   >
+    <NavLink to="/">
+    <Home  exact>
+
+    <BsFillArrowLeftCircleFill/><h1> BACK TO HOME </h1>
+    </Home>
+    </NavLink>
    <AboutContent id="shop">
        <div>
     <Helmet>
@@ -130,6 +137,22 @@ export default function About() {
   );
 }
 
+const Home = styled.div`
+font-family: "Expletus Sans", sans-serif;
+margin-left: 3rem;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 20px;
+h1 {
+  font-size: 18px;
+  margin-left: 1rem;
+}
+& :hover {
+text-decoration: underline;
+}
+`
 
 const Image = styled.img`
 width: 400px;
@@ -143,7 +166,7 @@ const AboutContent = styled.div`
   display: flex;
   align-items: center;
   padding-top: 2rem;
-  font-family: "Sen", sans-serif;
+  font-family: "Expletus Sans", sans-serif;
   background-size: cover;
   color: #000000;
   flex-direction: column;
@@ -171,12 +194,12 @@ const AboutTitle = styled.div`
 
 const AboutBox = styled.div`
 margin-top: 3rem;
-font-size: 13px;
+font-size: 16px;
 width: 95%;
 display: flex;
 flex-direction: row;
 justify-content: center;
-@media (max-width: 860px) {
+@media (max-width: 1260px) {
   flex-direction: column;
   justify-content: center;
   align-items: center;

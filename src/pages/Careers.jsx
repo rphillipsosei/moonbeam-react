@@ -5,6 +5,8 @@ import { Button } from "react-bootstrap";
 import jobApp from "../assets/jobApp.pdf";
 import {motion} from "framer-motion"
 import { Helmet } from "react-helmet";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { NavLink } from "react-router-dom";
 
 export default function Careers() {
   return (
@@ -23,6 +25,12 @@ export default function Careers() {
       },
     }}
   >
+        <NavLink to="/">
+    <Home  exact>
+
+    <BsFillArrowLeftCircleFill/><h1> BACK TO HOME </h1>
+    </Home>
+    </NavLink>
     <CareersContent>
       <div>
         <Helmet>
@@ -43,14 +51,14 @@ export default function Careers() {
 
         <h6>
           We recognize all of the different life transitions that people may
-          encounter in life. <br></br>
+          encounter in life. 
           We value everyone's opinion, and believe the key to success is having
           a multitude of perspectives.
           <br></br>
           <br></br>
           If you have faced any career obstacles relating to accessibility, or
           life challenges such as addition, incarceration, and/or
-          physical/mental health , you are encouraged <br></br>to apply.{" "}
+          physical/mental health, you are encouraged to apply.{" "}
           <br></br> <br></br>Tell us your story!
           <br></br>
           <br></br>
@@ -74,6 +82,22 @@ export default function Careers() {
   );
 }
 
+const Home = styled.div`
+font-family: "Expletus Sans", sans-serif;
+margin-left: 3rem;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 20px;
+h1 {
+  font-size: 18px;
+  margin-left: 1rem;
+}
+& :hover {
+text-decoration: underline;
+}
+`
 const Image = styled.img`
   border-radius: 15px;
   height: 250px;
@@ -97,7 +121,7 @@ const CareersContent = styled.div`
   display: flex;
   align-items: center;
   padding-top: 2rem;
-  font-family: "Sen", sans-serif;
+  font-family: "Expletus Sans", sans-serif;
   flex-direction: column;
 `;
 
@@ -141,9 +165,9 @@ const CareersBox = styled.div`
     }
   }
   h6 {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    width: 350px;
+    width: 450px;
   }
   @media (max-width: 530px) {
     height: 600px;

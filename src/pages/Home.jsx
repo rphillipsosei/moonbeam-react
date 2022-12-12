@@ -5,6 +5,8 @@ import homebg from "../assets/bigdata.jpg"
 import {Helmet} from 'react-helmet'
 import {motion} from "framer-motion";
 import Banner from "../assets/moonbeam-banner.jpg"
+import businessimg from "../assets/business-solutions.jpg"
+import HomeImg from "../assets/night-sky.png"
 
 export default function Home() {
   return (
@@ -39,6 +41,9 @@ export default function Home() {
       <HomeContent>
         <MoonbeamBanner alt="Moonbeam Trading Company" src={Banner}>
         </MoonbeamBanner>
+        <BusinessImg alt="Home Image" src={HomeImg}>
+
+        </BusinessImg>
         {/* <HomeTitle>
           moonbeam <br></br>trading<br></br> company
           <h3>Services that create business, customer, and community value</h3>
@@ -50,8 +55,14 @@ export default function Home() {
 }
 
 const MoonbeamBanner = styled.img`
-
+// height: 50%;
+height: 300px;
 `
+const BusinessImg = styled.img`
+// height:700px;
+width: 100%;
+`
+
 
 const AppContainer = styled.div`
 height: 90vh;
@@ -61,11 +72,12 @@ height: 90vh;
 
 
 const HomeContent = styled.div`
-  height: 100%;
+
+  // height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   padding-top: 2rem;
   // font-family: "Sen", sans-serif;
   // background-image: url(${homebg});

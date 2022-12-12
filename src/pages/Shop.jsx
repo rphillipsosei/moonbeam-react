@@ -6,6 +6,8 @@ import shopify from "../assets/shopify.png";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import {motion} from "framer-motion";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { NavLink } from "react-router-dom";
 
 
 export default function Shop() {
@@ -25,6 +27,12 @@ export default function Shop() {
       },
     }}
   >
+        <NavLink to="/">
+    <Home  exact>
+
+    <BsFillArrowLeftCircleFill/><h1> BACK TO HOME </h1>
+    </Home>
+    </NavLink>
     <ShopContent>
       <div>
         <Helmet>
@@ -79,6 +87,24 @@ export default function Shop() {
   );
 }
 
+
+const Home = styled.div`
+font-family: "Expletus Sans", sans-serif;
+margin-left: 3rem;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 20px;
+h1 {
+  font-size: 18px;
+  margin-left: 1rem;
+}
+& :hover {
+text-decoration: underline;
+}
+`
+
 const Image = styled.img`
   height: 350px;
   margin-right: 5rem;
@@ -116,6 +142,7 @@ const ShopTitle = styled.div`
   width: 800px;
   height: 100px;
   display: flex;
+  font-family: "Expletus Sans", sans-serif;
   justify-content: center;
   margin-bottom: 1.5rem;
   align-items: center;
@@ -156,6 +183,7 @@ const ShopTitle = styled.div`
 `;
 
 const ShopBox = styled.div`
+
   height: 500px;
   width: 1300px;
   display: flex;
@@ -169,7 +197,8 @@ const ShopBox = styled.div`
 `;
 
 const ShopOptions = styled.div`
-  width: 600px;
+font-family: "Expletus Sans", sans-serif;  
+width: 600px;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -206,6 +235,7 @@ const ShopifyRow = styled.div`
       font-size: 16px;
     }
   }
+
 `;
 const ShopifyIcon = styled.img`
   height: 120px;

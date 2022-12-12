@@ -12,9 +12,7 @@ export default function Navigation() {
   return (
     <Nav>
       <NavLink to="/">
-     {/* <Logo>
-        <img src={logo} height={70} width={70} />
-      </Logo>  */}
+
       </NavLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -45,6 +43,7 @@ export default function Navigation() {
 
 
 const Nav = styled.div`
+
     color: #000000;
     // width: 100%;
     height: 100px;
@@ -56,21 +55,10 @@ const Nav = styled.div`
     // border: 3px solid rgba(12,121,190,255);
     // position: fixed;
     // top: 1%;
+    padding-right: 4rem;
   `;
 
-  const Logo = styled.a`
-  margin-left: 0.7rem;
-    height: 70px;
-    width: 70px;
-    // border: 3px solid hotpink;
-    text-decoration: none;
-    margin-bottom: 0.7rem;
-    cursor: pointer
-    @media (max-width: 900px) {
-     height: 50px;
-     width: 50px;
-          }
-    `;
+
 
 
   
@@ -94,6 +82,7 @@ const Nav = styled.div`
 
   const Menu = styled.div`
   margin-top: 2rem;
+  // margin-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +100,7 @@ const Nav = styled.div`
     `;
 
   const MenuLinks = styled.li`
-  font-family: Sen;
+  font-family: "Expletus Sans", sans-serif;
   font-size: 16px;
   font-weight: bold;
   padding: 1rem; 2rem;
