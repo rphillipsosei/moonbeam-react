@@ -6,7 +6,7 @@ import {Helmet} from 'react-helmet'
 import {motion} from "framer-motion";
 import Banner from "../assets/moonbeam-banner.jpg"
 import businessimg from "../assets/business-solutions.jpg"
-import HomeImg from "../assets/night-sky.png"
+import HomeImg from "../assets/city.jpg"
 
 export default function Home() {
   return (
@@ -57,10 +57,16 @@ export default function Home() {
 const MoonbeamBanner = styled.img`
 // height: 50%;
 height: 300px;
+@media (max-width: 1600px) {
+width: 90%;
+height: auto
+}
 `
 const BusinessImg = styled.img`
 // height:700px;
 width: 100%;
+object-fit: cover;
+height: 589px;
 `
 
 
